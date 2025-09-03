@@ -1,6 +1,6 @@
 title: Berkeley eXtensible Environment
 description: Berkeley Lab-hosted Computer Architecture Simulation Environment
-baseurl: "bxe.github.io"
+baseurl: "bxe"
 url: "https://lbnlcomputerarch.github.io/"
 
 markdown: kramdown
