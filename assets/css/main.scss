@@ -1,0 +1,616 @@
+---
+---
+// Dark mode variables
+[data-bs-theme="dark"] {
+  --lbnl-dark-blue: #4a90a4;
+  --lbnl-teal: #20c997;
+  --lbnl-light-gray: #6c757d;
+  --lbnl-dark-gray: #adb5bd;
+
+  // Keep accent color but adjust for dark mode
+  --lbnl-accent: var(--lbnl-$ {
+      accent_color
+    });
+
+  --lbnl-white: #212529;
+  --lbnl-black: #ffffff;
+}
+
+// Dark mode navbar
+[data-bs-theme="dark"] .navbar {
+  background-color: var(--bs-dark) !important;
+  border-bottom-color: var(--lbnl-accent);
+}
+
+[data-bs-theme="dark"] .navbar-brand,
+[data-bs-theme="dark"] .navbar-nav .nav-link {
+  color: var(--bs-light) !important;
+}
+
+[data-bs-theme="dark"] .navbar-nav .nav-link:hover,
+[data-bs-theme="dark"] .navbar-nav .nav-link:focus,
+[data-bs-theme="dark"] .navbar-nav .nav-link.active {
+  color: var(--lbnl-accent) !important;
+}
+
+// Dark mode typography
+[data-bs-theme="dark"] h1,
+[data-bs-theme="dark"] h2,
+[data-bs-theme="dark"] h3,
+[data-bs-theme="dark"] h4,
+[data-bs-theme="dark"] h5,
+[data-bs-theme="dark"] h6 {
+  color: var(--bs-light) !important;
+}
+
+[data-bs-theme="dark"] .lbnl-header h1 {
+  color: var(--bs-white) !important;
+}
+
+// Dark mode cards
+[data-bs-theme="dark"] .lbnl-card,
+[data-bs-theme="dark"] .card {
+  background-color: var(--bs-dark);
+  border-color: var(--bs-secondary);
+  color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] .card-title {
+  color: var(--bs-light) !important;
+}
+
+[data-bs-theme="dark"] .card-text {
+  color: var(--bs-light);
+}
+
+// Dark mode alerts
+[data-bs-theme="dark"] .alert-lbnl-info {
+  background-color: rgba(32, 201, 151, 0.15);
+  border-color: var(--lbnl-teal);
+  color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] .alert-lbnl-warning {
+  background-color: rgba(234, 170, 0, 0.15);
+  border-color: var(--lbnl-yellow);
+  color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] .alert-lbnl-success {
+  background-color: rgba(116, 170, 80, 0.15);
+  border-color: var(--lbnl-green);
+  color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] .alert-lbnl-accent {
+  background-color: rgba(213, 120, 0, 0.15);
+  border-color: var(--lbnl-accent);
+  color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] .alert-lbnl-danger {
+  background-color: rgba(224, 78, 57, 0.15);
+  border-color: var(--lbnl-red);
+  color: var(--bs-light);
+}
+
+// Dark mode buttons
+[data-bs-theme="dark"] .btn-outline-secondary {
+  color: var(--bs-light);
+  border-color: var(--bs-secondary);
+}
+
+[data-bs-theme="dark"] .btn-outline-secondary:hover {
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+  color: var(--bs-dark);
+}
+
+// Dark mode badges
+[data-bs-theme="dark"] .lbnl-badge {
+  color: var(--bs-dark);
+}
+
+[data-bs-theme="dark"] .lbnl-badge-dark {
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+}
+
+// Dark mode code blocks
+[data-bs-theme="dark"] pre,
+[data-bs-theme="dark"] code {
+  background-color: var(--bs-dark);
+  border-color: var(--bs-secondary);
+  color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] .highlight {
+  background-color: var(--bs-dark);
+}
+
+// Dark mode tables
+[data-bs-theme="dark"] .table-lbnl {
+  color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] .table-lbnl th {
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
+  border-color: var(--bs-secondary);
+}
+
+[data-bs-theme="dark"] .table-lbnl td {
+  border-color: var(--bs-secondary);
+  color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] .table-lbnl tbody tr:hover {
+  background-color: var(--bs-dark);
+}
+
+// Dark mode footer
+[data-bs-theme="dark"] footer {
+  background-color: var(--bs-black) !important;
+  color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] footer p {
+  color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] footer a {
+  color: var(--lbnl-accent);
+}
+
+[data-bs-theme="dark"] footer a:hover {
+  color: var(--bs-white);
+}
+
+// Dark mode links
+[data-bs-theme="dark"] a {
+  color: var(--lbnl-teal);
+}
+
+[data-bs-theme="dark"] a:hover,
+[data-bs-theme="dark"] a:focus {
+  color: var(--bs-light);
+}
+
+// Dark mode accent borders and elements
+[data-bs-theme="dark"] .lbnl-accent {
+  border-left-color: var(--lbnl-accent);
+}
+
+[data-bs-theme="dark"] .border-lbnl-accent {
+  border-color: var(--lbnl-accent) !important;
+}
+
+// Dark mode navbar toggler
+[data-bs-theme="dark"] .navbar-toggler {
+  border-color: var(--bs-secondary);
+}
+
+[data-bs-theme="dark"] .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+// Dark mode form elements
+[data-bs-theme="dark"] .form-control,
+[data-bs-theme="dark"] .form-select {
+  background-color: var(--bs-dark);
+  border-color: var(--bs-secondary);
+  color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] .form-control:focus,
+[data-bs-theme="dark"] .form-select:focus {
+  background-color: var(--bs-dark);
+  border-color: var(--lbnl-accent);
+  color: var(--bs-light);
+  box-shadow: 0 0 0 0.25rem rgba(var(--lbnl-accent), 0.25);
+}
+
+// Dark mode blockquotes
+[data-bs-theme="dark"] blockquote {
+  color: var(--bs-light);
+  border-left-color: var(--lbnl-accent);
+}
+
+// Import Bootswatch theme (using Spacelab as base, but we'll customize with LBNL colors)
+@import url('https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/spacelab/bootstrap.min.css');
+
+// Official LBNL Color Scheme (2025)
+:root {
+  // Primary Palette
+  --lbnl-dark-blue: #00313C;      // Primary brand color
+  --lbnl-teal: #007681;
+  --lbnl-light-gray: #B1B3B3;
+  --lbnl-dark-gray: #63666A;
+  
+  // Secondary Palette
+  --lbnl-orange: #D57800;
+  --lbnl-green: #74AA50;
+  --lbnl-yellow: #EAAA00;
+  --lbnl-red: #E04E39;
+  --lbnl-dusty-rose: #E8927C;
+  --lbnl-olive-green: #AC9F3C;
+  --lbnl-blue: #4298B5;
+  --lbnl-purple: #5D4777;
+  --lbnl-burgundy: #672E45;
+  
+  // Project accent color (selected: Yellow)
+  --lbnl-accent: var(--lbnl-yellow);
+  
+  // Neutral Colors
+  --lbnl-white: #ffffff;
+  --lbnl-black: #000000;
+}
+
+// Override Bootstrap variables with official LBNL colors
+.navbar {
+  background-color: var(--lbnl-white) !important;
+  border-bottom: 3px solid var(--lbnl-accent);
+  box-shadow: 0 2px 4px rgba(0, 49, 60, 0.1);
+}
+
+.navbar-brand {
+  color: var(--lbnl-dark-blue) !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: var(--lbnl-dark-blue) !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--lbnl-accent) !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--lbnl-accent) !important;
+  font-weight: 600;
+}
+
+// Primary buttons use Dark Blue
+.btn-primary {
+  background-color: var(--lbnl-dark-blue);
+  border-color: var(--lbnl-dark-blue);
+  color: var(--lbnl-white);
+  font-weight: 500;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--lbnl-teal);
+  border-color: var(--lbnl-teal);
+  color: var(--lbnl-white);
+}
+
+// Secondary buttons use selected accent color
+.btn-secondary {
+  background-color: var(--lbnl-accent);
+  border-color: var(--lbnl-accent);
+  color: var(--lbnl-white);
+  font-weight: 500;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--lbnl-dark-blue);
+  border-color: var(--lbnl-dark-blue);
+  color: var(--lbnl-white);
+}
+
+// Outline buttons
+.btn-outline-primary {
+  color: var(--lbnl-dark-blue);
+  border-color: var(--lbnl-dark-blue);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--lbnl-dark-blue);
+  border-color: var(--lbnl-dark-blue);
+  color: var(--lbnl-white);
+}
+
+.btn-outline-secondary {
+  color: var(--lbnl-accent);
+  border-color: var(--lbnl-accent);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--lbnl-accent);
+  border-color: var(--lbnl-accent);
+  color: var(--lbnl-white);
+}
+
+// Typography following LBNL guidelines
+h1, h2, h3, h4, h5, h6 {
+  color: var(--lbnl-dark-blue);
+  font-weight: 600;
+}
+
+// Links use Teal for better accessibility
+a {
+  color: var(--lbnl-teal);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--lbnl-dark-blue);
+  text-decoration: underline;
+}
+
+// LBNL-specific components
+.lbnl-header {
+  background: linear-gradient(135deg, var(--lbnl-dark-blue), var(--lbnl-teal));
+  color: var(--lbnl-white);
+  padding: 3rem 0;
+}
+
+.lbnl-header h1 {
+  color: var(--lbnl-white);
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.lbnl-header .lead {
+  color: var(--lbnl-light-gray);
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.lbnl-accent {
+  border-left: 4px solid var(--lbnl-accent);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+}
+
+.lbnl-card {
+  border: 1px solid var(--lbnl-light-gray);
+  border-top: 4px solid var(--lbnl-accent);
+}
+
+.lbnl-badge {
+  background-color: var(--lbnl-accent);
+  color: var(--lbnl-white);
+  font-weight: 600;
+}
+
+.lbnl-badge-dark {
+  background-color: var(--lbnl-dark-blue);
+  color: var(--lbnl-white);
+  font-weight: 600;
+}
+
+// Alert variations using LBNL colors
+.alert-lbnl-info {
+  background-color: rgba(0, 118, 129, 0.1);
+  border-color: var(--lbnl-teal);
+  color: var(--lbnl-dark-blue);
+  border-left: 4px solid var(--lbnl-teal);
+}
+
+.alert-lbnl-warning {
+  background-color: rgba(234, 170, 0, 0.1);
+  border-color: var(--lbnl-yellow);
+  color: var(--lbnl-dark-blue);
+  border-left: 4px solid var(--lbnl-yellow);
+}
+
+.alert-lbnl-success {
+  background-color: rgba(116, 170, 80, 0.1);
+  border-color: var(--lbnl-green);
+  color: var(--lbnl-dark-blue);
+  border-left: 4px solid var(--lbnl-green);
+}
+
+.alert-lbnl-accent {
+  background-color: rgba(213, 120, 0, 0.1);
+  border-color: var(--lbnl-accent);
+  color: var(--lbnl-dark-blue);
+  border-left: 4px solid var(--lbnl-accent);
+}
+
+// Footer styling
+footer {
+  background-color: var(--lbnl-dark-blue) !important;
+  color: var(--lbnl-white);
+  border-top: 3px solid var(--lbnl-accent);
+}
+
+footer p {
+  color: var(--lbnl-light-gray);
+  margin-bottom: 0;
+}
+
+footer a {
+  color: var(--lbnl-accent);
+}
+
+footer a:hover {
+  color: var(--lbnl-white);
+  text-decoration: underline;
+}
+
+// Code blocks and syntax highlighting
+pre, code {
+  background-color: rgba(177, 179, 179, 0.1);
+  border: 1px solid var(--lbnl-light-gray);
+  color: var(--lbnl-dark-blue);
+}
+
+.highlight {
+  background-color: rgba(177, 179, 179, 0.05);
+}
+
+// Tables
+.table-lbnl {
+  border-top: 2px solid var(--lbnl-accent);
+}
+
+.table-lbnl th {
+  background-color: var(--lbnl-dark-blue);
+  color: var(--lbnl-white);
+  border-color: var(--lbnl-teal);
+}
+
+.table-lbnl td {
+  border-color: var(--lbnl-light-gray);
+}
+
+.table-lbnl tbody tr:hover {
+  background-color: rgba(213, 120, 0, 0.05);
+}
+
+// Progress bars
+.progress-lbnl .progress-bar {
+  background-color: var(--lbnl-accent);
+}
+
+// Custom utility classes
+.text-lbnl-primary {
+  color: var(--lbnl-dark-blue) !important;
+}
+
+.text-lbnl-accent {
+  color: var(--lbnl-accent) !important;
+}
+
+.bg-lbnl-primary {
+  background-color: var(--lbnl-dark-blue) !important;
+  color: var(--lbnl-white);
+}
+
+.bg-lbnl-accent {
+  background-color: var(--lbnl-accent) !important;
+  color: var(--lbnl-white);
+}
+
+.border-lbnl-accent {
+  border-color: var(--lbnl-accent) !important;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .lbnl-header h1 {
+    font-size: 2rem;
+  }
+  
+  .lbnl-header {
+    padding: 2rem 0;
+  }
+  
+  .lbnl-accent {
+    padding-left: 1rem;
+  }
+}
+
+// Accessibility improvements
+:focus {
+  outline: 2px solid var(--lbnl-accent);
+  outline-offset: 2px;
+}
+
+// Skip to content link for accessibility
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--lbnl-accent);
+  color: var(--lbnl-white);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+// Print styles
+@media print {
+  .navbar, footer {
+    display: none;
+  }
+  
+  body {
+    color: var(--lbnl-black);
+  }
+  
+  a {
+    color: var(--lbnl-black);
+    text-decoration: underline;
+  }
+  
+  .lbnl-header {
+    background: none !important;
+    color: var(--lbnl-black) !important;
+  }
+}
+
+// Logo styling
+.navbar-brand img {
+  max-height: 40px;
+  width: auto;
+}
+
+// Footer logo styling
+.sponsor-logos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .sponsor-logos {
+    justify-content: flex-end;
+  }
+}
+
+.sponsor-logo {
+  height: 32px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.sponsor-logo:hover {
+  opacity: 1;
+}
+
+.logo-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo-link:hover {
+  text-decoration: none;
+}
+
+// Dark mode logo adjustments
+[data-bs-theme="dark"] .sponsor-logo {
+  filter: brightness(0.9);
+}
+
+[data-bs-theme="dark"] .sponsor-logo:hover {
+  filter: brightness(1.1);
+}
+
+// Responsive navbar brand
+@media (max-width: 576px) {
+  .navbar-brand span {
+    font-size: 0.9rem;
+  }
+
+  .navbar-brand img {
+    max-height: 32px;
+  }
+}
