@@ -28,7 +28,7 @@ permalink: /contact/
             <div class="card-body">
                 <h3 class="card-title">Project Information</h3>
                 <ul class="list-unstyled">
-                    <li><strong>GitHub:</strong> <em><a href="https://github.com//" target="_blank">/</a></em></li>
+                    <li><strong>GitHub:</strong> <em><a href="https://github.com/lbnlcomputerarch/bxe" target="_blank">lbnlcomputerarch/bxe</a></em></li>
                     <li><strong>Documentation:</strong> <em>Add link to docs</em></li>
                     <li><strong>Lab/Division:</strong> <em>Your Lab Division</em></li>
                 </ul>

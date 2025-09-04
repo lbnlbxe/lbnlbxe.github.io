@@ -15,9 +15,21 @@ sponsors:
     
   # Add additional sponsors here
   # Both PNG and SVG formats are supported
-  # - order: 3
-  #   name: "nsf"
-  #   logo: "nsf-logo.svg"
-  #   alt: "National Science Foundation"
-  #   url: "https://www.nsf.gov/"
+  - order: 3
+    name: "amcr"
+    logo: "AMCR-logo.png"
+    alt: "Applied Mathematics and Computational Research Division"
+    url: "https://crd.lbl.gov/divisions/amcr/"
+
+  - order: 4
+    name: "iarpa"
+    logo: "IARPA-logo.png"
+    alt: "Intelligence Advanced Research Projects Activity"
+    url: "https://www.iarpa.gov/"
+
+  - order: 5
+    name: "agile"
+    logo: "AGILE-logo.png"
+    alt: "IARPA Advanced Graphic Intelligence Logical Computing Environment (AGILE)"
+    url: "https://www.iarpa.gov/research-programs/agile"
   

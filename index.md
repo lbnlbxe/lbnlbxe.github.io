@@ -9,7 +9,7 @@ title: Home
         <p class="lead">LBNL-hosted, FPGA-based Computer Architecture Simulation Environment</p>
         <div class="mt-4">
             <a href="#about" class="btn btn-secondary me-3">Learn More</a>
-            <a href="/" class="btn btn-outline-light">View on GitHub</a>
+            <a href="lbnlcomputerarch/bxe" class="btn btn-outline-light">View on GitHub</a>
         </div>
     </div>
 </div>
