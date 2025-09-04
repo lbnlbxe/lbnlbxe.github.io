@@ -11,7 +11,7 @@
   --lbnl-teal: #007681;
   --lbnl-light-gray: #B1B3B3;
   --lbnl-dark-gray: #63666A;
-  
+
   // Secondary Palette
   --lbnl-orange: #D57800;
   --lbnl-green: #74AA50;
@@ -22,10 +22,10 @@
   --lbnl-blue: #4298B5;
   --lbnl-purple: #5D4777;
   --lbnl-burgundy: #672E45;
-  
+
   // Project accent color
   --lbnl-accent: var(--lbnl-yellow);
-  
+
   // Neutral Colors
   --lbnl-white: #ffffff;
   --lbnl-black: #000000;
@@ -720,6 +720,11 @@ pre, code {
   border-left-color: var(--lbnl-accent);
 }
 
+// Smooth transitions for theme switching (disabled during page load)
+html:not(.no-transitions) * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
 // Accessibility improvements
 :focus {
   outline: 2px solid var(--lbnl-accent);
@@ -748,11 +753,11 @@ pre, code {
   .lbnl-header h1 {
     font-size: 2rem;
   }
-  
+
   .lbnl-header {
     padding: 2rem 0;
   }
-  
+
   .lbnl-accent {
     padding-left: 1rem;
   }
@@ -762,12 +767,12 @@ pre, code {
   .navbar-brand span {
     font-size: 0.9rem;
   }
-  
+
   .navbar-brand img,
   .navbar-brand svg {
     max-height: 32px;
   }
-  
+
   .sponsor-logo,
   .sponsor-logos svg {
     height: 24px;
@@ -779,16 +784,16 @@ pre, code {
   .navbar, footer {
     display: none;
   }
-  
+
   body {
     color: var(--lbnl-black);
   }
-  
+
   a {
     color: var(--lbnl-black);
     text-decoration: underline;
   }
-  
+
   .lbnl-header {
     background: none !important;
     color: var(--lbnl-black) !important;
@@ -919,7 +924,7 @@ pre, code {
     margin: 1rem 0;
     padding: 0.75rem;
   }
-  
+
   .mermaid svg {
     min-width: 100%;
   }
