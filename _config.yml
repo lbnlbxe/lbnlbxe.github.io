@@ -1,17 +1,18 @@
 title: Berkeley eXtensible Environment
-description: Berkeley Lab-hosted Computer Architecture Simulation Environment
-baseurl: "bxe"
-url: "https://lbnlcomputerarch.github.io/"
+description: LBNL-hosted, FPGA-based Computer Architecture Simulation Environment
+baseurl: ""
+url: ""
 
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
 
+# GitHub Pages supported plugins (automatically enabled with github-pages gem)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 
-# Include pages directory in processing
 include: ['pages']
 
 defaults:
@@ -25,4 +26,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - setup-lbnl-jekyll.sh
+  - .gitignore
+  - vendor/
+  - node_modules/
+  - templates/
+  

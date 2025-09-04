@@ -5,56 +5,38 @@ title: Home
 
 <div class="lbnl-header">
     <div class="container">
-        <h1>{{ site.title }}</h1>
-        <p class="lead">Berkeley Lab Computing Research - Advancing Scientific Discovery</p>
+        <h1>Berkeley eXtensible Environment</h1>
+        <p class="lead">LBNL-hosted, FPGA-based Computer Architecture Simulation Environment</p>
         <div class="mt-4">
-            <a href="#features" class="btn btn-secondary me-3">Learn More</a>
-            <a href="https://github.com/lbnlcomputerarch/bxe.github.io" class="btn btn-outline-light">View on GitHub</a>
+            <a href="#about" class="btn btn-secondary me-3">Learn More</a>
+            <a href="/" class="btn btn-outline-light">View on GitHub</a>
         </div>
     </div>
 </div>
 
 <div class="container my-5">
-    <div class="lbnl-accent">
-        <h2>About This Project</h2>
-        <p>This project represents Berkeley Lab's commitment to advancing computational science and research excellence. Built with modern web technologies and following LBNL's official visual identity guidelines with Orange as the accent color.</p>
-    </div>
-    
-    <section id="features">
-        <h2>Project Features</h2>
+    <section id="about">
+        <div class="lbnl-accent">
+            <h2>About This Project</h2>
+            <p><em>Replace this section with a brief description of your research project, its goals, and its significance to Berkeley Lab's mission.</em></p>
+        </div>
         
-        <p>Our platform provides cutting-edge computational resources designed for scientific research and collaboration. Key capabilities include high-performance computing integration, collaborative research tools, and seamless data management solutions.</p>
+        <p><em>Add a more detailed overview of your project here. Describe the problem you're solving, your approach, and the expected outcomes.</em></p>
         
         <div class="row mt-4">
             <div class="col-md-6 mb-3">
                 <div class="card lbnl-card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">High Performance Computing</h5>
-                        <p class="card-text">Leveraging Berkeley Lab's world-class HPC resources for computational research.</p>
+                        <h5 class="card-title">Key Feature 1</h5>
+                        <p class="card-text"><em>Describe a major feature or capability of your project.</em></p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 mb-3">
                 <div class="card lbnl-card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Collaborative Platform</h5>
-                        <p class="card-text">Tools designed to facilitate collaboration among researchers worldwide.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <div class="card lbnl-card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Open Science</h5>
-                        <p class="card-text">Commitment to open-source development and reproducible research methodologies.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <div class="card lbnl-card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Innovation</h5>
-                        <p class="card-text">Pushing the boundaries of computational methodology and scientific discovery.</p>
+                        <h5 class="card-title">Key Feature 2</h5>
+                        <p class="card-text"><em>Describe another important aspect of your work.</em></p>
                     </div>
                 </div>
             </div>
@@ -62,12 +44,7 @@ title: Home
     </section>
     
     <div class="alert alert-lbnl-info mt-4" role="alert">
-        <strong>Latest Updates:</strong> Check our GitHub repository for the most recent developments and contributions to the BXE project.
+        <strong>Getting Started:</strong> <em>Add instructions here for how users can get started with your project, access your data, or use your tools.</em>
     </div>
     
-    <div class="text-center mt-5">
-        <span class="lbnl-badge badge me-2">Berkeley Lab</span>
-        <span class="lbnl-badge-dark badge me-2">Open Source</span>
-        <span class="lbnl-badge badge">Research</span>
-    </div>
 </div>

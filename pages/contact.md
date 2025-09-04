@@ -8,17 +8,16 @@ permalink: /contact/
 
 # Contact Us
 
-Get in touch with the BXE team for collaborations, questions, or more information about our research.
-
 <div class="row">
     <div class="col-md-6">
         <div class="lbnl-card card">
             <div class="card-body">
-                <h3 class="card-title">General Inquiries</h3>
+                <h3 class="card-title">Principal Investigator</h3>
                 <ul class="list-unstyled">
-                    <li><strong>Email:</strong> <a href="mailto:your-email@lbl.gov">your-email@lbl.gov</a></li>
-                    <li><strong>Phone:</strong> (510) 486-XXXX</li>
-                    <li><strong>GitHub:</strong> <a href="https://github.com/lbnlcomputerarch" target="_blank">lbnlcomputerarch</a></li>
+                    <li><strong>Name:</strong> <em>Your Name</em></li>
+                    <li><strong>Email:</strong> <em><a href="mailto:your.email@lbl.gov">your.email@lbl.gov</a></em></li>
+                    <li><strong>Phone:</strong> <em>(510) 486-XXXX</em></li>
+                    <li><strong>Office:</strong> <em>Building XX, Room XXX</em></li>
                 </ul>
             </div>
         </div>
@@ -27,31 +26,41 @@ Get in touch with the BXE team for collaborations, questions, or more informatio
     <div class="col-md-6">
         <div class="lbnl-card card">
             <div class="card-body">
-                <h3 class="card-title">Address</h3>
-                <address>
-                    Lawrence Berkeley National Laboratory<br>
-                    1 Cyclotron Road<br>
-                    Berkeley, CA 94720<br>
-                    United States
-                </address>
+                <h3 class="card-title">Project Information</h3>
+                <ul class="list-unstyled">
+                    <li><strong>GitHub:</strong> <em><a href="https://github.com//" target="_blank">/</a></em></li>
+                    <li><strong>Documentation:</strong> <em>Add link to docs</em></li>
+                    <li><strong>Lab/Division:</strong> <em>Your Lab Division</em></li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
 
 <div class="lbnl-accent mt-4">
-    <h2>Collaboration Opportunities</h2>
-    <p>We're always interested in new collaborations and partnerships. Whether you're a researcher, student, or industry professional, we welcome opportunities to work together on advancing computational science.</p>
+    <h2>Get Involved</h2>
+    <p><em>Describe how interested researchers, students, or collaborators can get involved with your project.</em></p>
 </div>
 
-## Research Partnerships
+## Mailing Address
 
-If you're interested in collaborating on research projects, please reach out with details about your work and how we might collaborate effectively.
+<address>
+<em>Your Name</em><br>
+<em>Your Division/Department</em><br>
+Lawrence Berkeley National Laboratory<br>
+1 Cyclotron Road<br>
+Berkeley, CA 94720<br>
+United States
+</address>
+
+## Research Collaborations
+
+<em>Describe your approach to collaborations, what you're looking for in partners, and how potential collaborators should reach out.</em>
 
 ## Student Opportunities
 
-We offer various opportunities for students at all levels, from undergraduate internships to postdoctoral positions. Contact us to learn about current openings.
+<em>If you offer student positions, internships, or research opportunities, describe them here along with application procedures.</em>
 
 <div class="alert alert-lbnl-accent mt-4" role="alert">
-    <strong>Note:</strong> Please allow 1-2 business days for email responses. For urgent matters, please call our main office.
+    <strong>Note:</strong> <em>Add any important notes about response times, preferred contact methods, or specific procedures for different types of inquiries.</em>
 </div>
