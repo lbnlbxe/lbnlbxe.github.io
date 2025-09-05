@@ -55,7 +55,7 @@ ssh -i <LOCAL-PATH-TO-BXE-SSH-PRIVATEKEY> -J <USERNAME>@bxe.lbl.gov bxeuser@fire
 <!-- ## SSH Config (used for [![vscode](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png){height=24px} `vscode`](https://code.visualstudio.com/download)) -->
 ## SSH Config (used for <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" class="bi" style="max-height:1em" alt="VS Code"> VSCode)
 
-If you use <a class="icon-link" href="https://code.visualstudio.com/download"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" class="bi" alt="VS Code"> VSCode</a>, add the following to your local `~/.ssh/config`:
+If you use <a class="icon-link" href="https://code.visualstudio.com/download" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" class="bi" alt="VS Code"> VSCode</a>, add the following to your local `~/.ssh/config`:
 
 ```conf
 Host firesim-xxx
