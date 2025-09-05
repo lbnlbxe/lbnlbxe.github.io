@@ -12,7 +12,7 @@ permalink: /docs/connecting/
 * TOC
 {:toc}
 
-# Requesting a BXE Account
+## Requesting a BXE Account
 
 1. Please contact the LBNL T&E Team.
 2. You will receive an email with login username, password, and the BXE FireSim node you have been assigned.
@@ -38,7 +38,7 @@ Last login: Wed Apr 26 12:17:01 2023 from xxx.xxx.xxx.xxx
 
 6. Once confirmed, log into your assigned node and have fun!
 
-# Using SSH ProxyJump
+## Using SSH ProxyJump
 You can log into your BXE VM directly from your host using SSH ProxyJump (`-J` option).
 
 <div class="alert alert-primary mt-4">
@@ -46,14 +46,14 @@ You can log into your BXE VM directly from your host using SSH ProxyJump (`-J` o
     <p>You'll need to download a copy of your generated SSH private (<code>~/.ssh/id_ed25519</code>) and public (<code>~/.ssh/id_ed25519.pub</code>) keys from the previous <a href="#requesting-a-bxe-account">Requesting a BXE Account</a> section to your local machine in order for ProxyJump to work.</p>
 </div>
 
-## Command Line
+### Command Line
 
 ```shell
 ssh -i <LOCAL-PATH-TO-BXE-SSH-PRIVATEKEY> -J <USERNAME>@bxe.lbl.gov bxeuser@firesim-xxx
 ```
 
 <!-- ## SSH Config (used for [![vscode](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png){height=24px} `vscode`](https://code.visualstudio.com/download)) -->
-## SSH Config (used for <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" class="bi" style="max-height:1em" alt="VS Code"> VSCode)
+### SSH Config (used for <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" class="bi" style="max-height:1em" alt="VS Code"> VSCode)
 
 If you use <a class="icon-link" href="https://code.visualstudio.com/download" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" class="bi" alt="VS Code"> VSCode</a>, add the following to your local `~/.ssh/config`:
 
@@ -71,12 +71,12 @@ You can now simply login with:
 ssh firesim-xxx
 ```
 
-# Opening a Persistent Session on BXE FireSim Nodes
+## Opening a Persistent Session on BXE FireSim Nodes
 With any remote connection, disruptions happen. This can mean losing your work, like a running simulation, a custom architecture build, etc. Once you have established a connection to you BXE FireSim node, we recommend performing any work in a persistent session.
 
 Below you'll find some instructions on two options we provide.
 
-## Using `tmux`
+### Using `tmux`
 
 Log into your assigned BXE FireSim node and launch `tmux`.
 
@@ -96,7 +96,7 @@ bxeuser@firesim-xxx:~$ tmux
     <p>This <a href="https://tmuxcheatsheet.com/" target="_blank"><code>tmux</code> Cheat Sheet & Quick Reference</a> is a good resource.</p>
 </div>
 
-## Using VNC
+### Using VNC
 
 Your BXE FireSim node comes installed with TigerVNC. However, you'll have to forward the VNC port with SSH tunneling. While you can use any VNC port and any port on the login node, we recommend the following settings. In this example, we will use:
 
@@ -114,4 +114,4 @@ Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.15.0-71-generic x86_64)
 bxeuser@firesim-xxx:~$ vncserver :1
 ```
 
-3. Open your VNC Viewer of choice and open the SSH Tunnel port: `localhost:9501`.
+Open your VNC Viewer of choice and open the SSH Tunnel port: `localhost:9501`.
