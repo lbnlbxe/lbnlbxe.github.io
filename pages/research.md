@@ -1,8 +1,8 @@
 ---
 title: Research
-navbar: true
+navbar: false
 dropdown: true
-order: 2
+order: 3
 ---
 
 # Research Overview
