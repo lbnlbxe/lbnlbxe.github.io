@@ -3,6 +3,17 @@ description: LBNL-hosted, FPGA-based Computer Architecture Simulation Environmen
 baseurl: "/bxe"
 url: "https://lbnlcomputerarch.github.io"
 
+# Legal/Funding Acknowledgment (appears in footer accordion)
+# This section is configured during setup. To modify or disable:
+# - Edit the text below, or comment out the entire funding_acknowledgment section to hide the accordion
+funding_acknowledgment: |
+  This research is based upon work supported by the Office of the Director of National Intelligence (ODNI), 
+  Intelligence Advanced Research Projects Activity (IARPA), through the Advanced Graphical Intelligence 
+  Logical Computing Environment (AGILE) research program, under Army Research Office (ARO) contract number 
+  D2021-2106030006. The views and conclusions contained herein are those of the authors and should not be 
+  interpreted as necessarily representing the official policies or endorsements, either expressed or 
+  implied, of the ODNI, IARPA, ARO, or the U.S. Government.
+
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
