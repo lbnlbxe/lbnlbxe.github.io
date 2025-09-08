@@ -1,16 +1,31 @@
 ---
-layout: default
-title: Connecting to BXE
-navbar: true
-parent: Documentation
-order: 1
-permalink: /docs/connecting/
+layout: wiki
+title: Connecting
+description: Learn how to get started with this documentation system
+author: Berkeley eXtensible Environment Team
+last_modified_at: {{ page.last_modified_at }}
+category: Guide
+author: Berkeley eXtensible Environment Team
+breadcrumbs:
+  - title: Documentation
+    url: /docs/
+  - title: Environment
+    url: /docs/environment/
+  - title: Connecting
+    url: /docs/environment/connecting
+prev_page:
+  title: BXE Environment
+  url: /docs/environment/
+next_page:
+  title: Getting Started
+  url: /docs/environment/getting-started
+navbar: false
+parent: Environment
+order: 21
+permalink: /docs/environment/connecting/
 ---
 
 # Connecting to BXE
-
-* TOC
-{:toc}
 
 ## Requesting a BXE Account
 
@@ -42,7 +57,7 @@ Last login: Wed Apr 26 12:17:01 2023 from xxx.xxx.xxx.xxx
 You can log into your BXE VM directly from your host using SSH ProxyJump (`-J` option).
 
 <div class="alert alert-primary mt-4">
-    <h5>✏️ <strong>NOTE</strong></h5>
+    <h5><strong><i class="fas fa-info-circle me-2"></i>NOTE</strong></h5>
     <p>You'll need to download a copy of your generated SSH private (<code>~/.ssh/id_ed25519</code>) and public (<code>~/.ssh/id_ed25519.pub</code>) keys from the previous <a href="#requesting-a-bxe-account">Requesting a BXE Account</a> section to your local machine in order for ProxyJump to work.</p>
 </div>
 
@@ -92,7 +107,7 @@ bxeuser@firesim-xxx:~$ tmux
 - To detach from a `tmux` session but keep the session running: <kbd>Ctrl</kbd>/<kbd>&#8984;cmd</kbd>+<kbd>d</kbd>
 
 <div class="alert alert-primary mt-4">
-    <h5>✏️ <strong>NOTE</strong></h5>
+    <h5><strong><i class="fas fa-info-circle me-2"></i>NOTE</strong></h5>
     <p>This <a href="https://tmuxcheatsheet.com/" target="_blank"><code>tmux</code> Cheat Sheet & Quick Reference</a> is a good resource.</p>
 </div>
 

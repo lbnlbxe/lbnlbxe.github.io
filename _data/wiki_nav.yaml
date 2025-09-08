@@ -1,0 +1,34 @@
+sections:
+  - title: Home
+    icon: fas fa-home
+    pages:
+      - title: Docs Home
+        url: /docs/
+        icon: fas fa-home
+
+  - title: BXE Environment
+    icon: fas fa-seedling
+    pages:
+      - title: Connecting
+        url: /docs/environment/connecting
+        icon: fas fa-link
+      - title: Getting Started
+        url: /docs/environment/getting-started
+        icon: fas fa-play
+  
+  - title: Building
+    icon: fas fa-hammer
+    pages:
+      - title: Hardware Walkthrough
+        url: /docs/building/hardware-walkthrough
+        icon: fas fa-microchip
+      - title: Software Walkthrough
+        url: /docs/building/software-walkthrough
+        icon: fas fa-code
+
+  - title: Running
+    icon: fas fa-person-running
+    pages:
+      - title: Default Simulation
+        url: /docs/running/default-sim
+        icon: fas fa-fire-flame-curved
