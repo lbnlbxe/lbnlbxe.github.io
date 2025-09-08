@@ -3,7 +3,6 @@ layout: wiki
 title: Software Walkthrough
 description: Learn how to get started with this building custom hardware
 author: Berkeley eXtensible Environment Team
-last_modified_at: {{ page.last_modified_at }}
 category: Guide
 author: Berkeley eXtensible Environment Team
 breadcrumbs:

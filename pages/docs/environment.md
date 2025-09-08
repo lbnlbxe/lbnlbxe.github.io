@@ -3,7 +3,6 @@ layout: wiki
 title: Environment
 description: Introduction to the BXE Environment
 author: Berkeley eXtensible Environment Team
-last_modified_at: {{ page.last_modified_at }}
 category: Guide
 breadcrumbs:
   - title: Documentation

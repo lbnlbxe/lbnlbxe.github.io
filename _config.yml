@@ -32,7 +32,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-last-modified-at
 
 include: ['pages']
 
@@ -51,7 +50,3 @@ exclude:
   - vendor/
   - node_modules/
   - templates/
-  
-# The default date format
-last-modified-at:
-  date-format: '%y-%b-%d' 

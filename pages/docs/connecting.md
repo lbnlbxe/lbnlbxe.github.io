@@ -3,7 +3,6 @@ layout: wiki
 title: Connecting
 description: Learn how to get started with this documentation system
 author: Berkeley eXtensible Environment Team
-last_modified_at: {{ page.last_modified_at }}
 category: Guide
 author: Berkeley eXtensible Environment Team
 breadcrumbs:

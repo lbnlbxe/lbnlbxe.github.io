@@ -3,7 +3,6 @@ layout: wiki
 title: Building
 description: Building your custom design  designs in BXE
 author: Berkeley eXtensible Environment Team
-last_modified_at: {{ page.last_modified_at }}
 category: Guide
 breadcrumbs:
   - title: Documentation

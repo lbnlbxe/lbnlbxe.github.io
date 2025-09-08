@@ -3,7 +3,6 @@ layout: wiki
 title: BXE Docs
 description: Welcome to the Berkeley eXtensible Environment documentation center
 author: Berkeley eXtensible Environment Team
-last_modified_at: {{ page.last_modified_at }}
 category: Home
 navbar: true
 parent: Documentation

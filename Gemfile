@@ -9,11 +9,6 @@ gem "logger"
 gem "ostruct"
 gem "base64"
 
-# Plugins for Jekyll
-group :jekyll_plugins do
-  gem "jekyll-last-modified-at"
-end
-
 # Windows and JRuby specific gems
 platforms :windows, :jruby do
   gem "tzinfo", ">= 1", "< 3"

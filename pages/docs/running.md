@@ -3,7 +3,6 @@ layout: wiki
 title: Running
 description: Running your designs on BXE
 author: Berkeley eXtensible Environment Team
-last_modified_at: {{ page.last_modified_at }}
 category: Guide
 breadcrumbs:
   - title: Documentation
