@@ -14,10 +14,10 @@ permalink: /about/
 
 - vCPUs: 8-core x86-64 socket
 - Memory: 128 GiB
-- OS: [Xubuntu 20.04.6](https://xubuntu.org/release/20-04/)
-- FPGA: AMD/Xilinx [Alveo U250](https://www.xilinx.com/products/boards-and-kits/alveo/u250.html)
-  - AMD/Xilinx [Vitis 2023.1](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis/2023-1.html)
-- FireSim: [main](https://github.com/firesim/firesim/tree/c301eb5)
+- OS: [Xubuntu 20.04.6](https://xubuntu.org/release/20-04/){:target="_blank"}
+- FPGA: AMD/Xilinx [Alveo U250](https://www.xilinx.com/products/boards-and-kits/alveo/u250.html){:target="_blank"}
+  - AMD/Xilinx [Vitis 2023.1](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis/2023-1.html){:target="_blank"}
+- FireSim: [main](https://github.com/firesim/firesim/tree/c301eb5){:target="_blank"}
 
 
 ## BXE FireSim Cloud Architecture
@@ -58,4 +58,4 @@ flowchart LR
     f1 & f2 & f3 --> rhodey
 ```
 
-When you want to access BXE FireSim, you need to request an account for the BXE Login Node. Once you are given an account, you are assigned a specific VM (`firesim-XXX`). Each Virtual Machine is set up with [FireSim](https://docs.fires.im/en/main/) per the instructions found for the [Xilinx Alveo U250 XDMA-based Getting Started Guide](https://docs.fires.im/en/main/Getting-Started-Guides/On-Premises-FPGA-Getting-Started/Xilinx-Alveo-U250-FPGAs.html) for FireSim.
+When you want to access BXE FireSim, you need to request an account for the BXE Login Node. Once you are given an account, you are assigned a specific VM (`firesim-XXX`). Each Virtual Machine is set up with [FireSim](https://docs.fires.im/en/main/){:target="_blank"} per the instructions found for the [Xilinx Alveo U250 XDMA-based Getting Started Guide](https://docs.fires.im/en/main/Getting-Started-Guides/On-Premises-FPGA-Getting-Started/Xilinx-Alveo-U250-FPGAs.html){:target="_blank"} for FireSim.
