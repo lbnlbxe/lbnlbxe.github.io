@@ -10,8 +10,8 @@ title: Home
                 <h1 class="display-5 fw-normal"><strong>B</strong>erkeley e<strong>X</strong>tensible <strong>E</strong>nvironment (BXE)</h1>
                 <p class="lead mb-4">LBNL-hosted, FPGA-based Computer Architecture Simulation Environment</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                    <a href="/about" class="btn btn-secondary btn-lg">Learn More</a>
-                    <a href="/docs" class="btn btn-outline-secondary btn-lg">Documentation</a>
+                    <a href="{{ '/about' | relative_url }}" class="btn btn-secondary btn-lg">Learn More</a>
+                    <a href="{{ '/docs' | relative_url }}" class="btn btn-outline-secondary btn-lg">Documentation</a>
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@ title: Home
     </section>
     
     <div class="alert alert-info mt-4" role="alert">
-        <strong>Getting Started:</strong> Follow our <a href="/docs/">documentation</a> to learn how to connect and run your own simulations on BXE!
+        <strong>Getting Started:</strong> Follow our <a href="{{ '/docs' | relative_url }}">documentation</a> to learn how to connect and run your own simulations on BXE!
     </div>
     
 </div>
