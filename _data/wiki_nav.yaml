@@ -25,6 +25,9 @@ sections:
       - title: Software Walkthrough
         url: /docs/building/software-walkthrough
         icon: fas fa-code
+      - title: Container Walkthrough
+        url: /docs/building/container
+        icon: fas fa-box-open
 
   - title: Running
     icon: fas fa-person-running
