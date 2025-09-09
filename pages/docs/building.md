@@ -31,7 +31,7 @@ This section is entirely about building your custom hardware designs. These walk
         <p class="card-text">
           Walkthrough guide to building a custom design with Chipyard.
         </p>
-        <a href="/docs/building/hardware-walkthrough" class="btn btn-primary btn-sm">Learn More</a>
+        <a href="{{ '/docs/building/hardware-walkthrough' | relative_url }}" class="btn btn-primary btn-sm">Learn More</a>
       </div>
     </div>
   </div>
@@ -45,7 +45,7 @@ This section is entirely about building your custom hardware designs. These walk
         <p class="card-text">
           Walkthrough guide for building a Linux workload with FireMarshal.
         </p>
-        <a href="/docs/building/software-walkthrough" class="btn btn-primary btn-sm">Learn More</a>
+        <a href="{{ '/docs/building/software-walkthrough' | relative_url }}" class="btn btn-primary btn-sm">Learn More</a>
       </div>
     </div>
   </div>
