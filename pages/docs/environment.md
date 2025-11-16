@@ -21,19 +21,17 @@ This section is about introducing you to the BXE environment.
 
 ## What You'll Find Here
 
-_TBD_
-
-<!-- <div class="row mt-4">
+<div class="row mt-4">
   <div class="col-md-6 mb-4">
     <div class="card h-100">
       <div class="card-body">
         <h5 class="card-title">
-          <i class="fas fa-microchip text-info me-2"></i>Hardware Walkthrough
+          <i class="fas fa-link text-info me-2"></i>Connecting
         </h5>
         <p class="card-text">
-          Walkthrough guide to building a custom design with Chipyard.
+          Walkthrough guide to connecting to the LBNL BXE Cluster.
         </p>
-        <a href="/docs/building/hardware-walkthrough" class="btn btn-primary btn-sm">Learn More</a>
+        <a href="/docs/environment/connecting" class="btn btn-primary btn-sm">Learn More</a>
       </div>
     </div>
   </div>
@@ -42,13 +40,13 @@ _TBD_
     <div class="card h-100">
       <div class="card-body">
         <h5 class="card-title">
-          <i class="fas fa-code text-info me-2"></i>Software Walkthrough
+          <i class="fas fa-font-awesome text-info me-2"></i>First Time
         </h5>
         <p class="card-text">
-          Walkthrough guide for building a Linux workload with FireMarshal.
+          Walkthrough guide for installing the BXE environment the first time you log into your BXE node.
         </p>
-        <a href="/docs/building/software-walkthrough" class="btn btn-primary btn-sm">Learn More</a>
+        <a href="/docs/environment/first-time" class="btn btn-primary btn-sm">Learn More</a>
       </div>
     </div>
   </div>
-</div> -->
+</div>

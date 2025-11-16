@@ -26,7 +26,7 @@ Welcome to the comprehensive documentation for Berkeley eXtensible Environment. 
         <p class="card-text">
           New to the project? Start here to learn the basics and get up and running quickly.
         </p>
-        <a href="/docs/getting-started" class="btn btn-primary btn-sm">Get Started</a>
+        <a href="/docs/environment" class="btn btn-primary btn-sm">Get Started</a>
       </div>
     </div>
   </div>
@@ -35,17 +35,18 @@ Welcome to the comprehensive documentation for Berkeley eXtensible Environment. 
     <div class="card h-100">
       <div class="card-body">
         <h5 class="card-title">
-          <i class="fas fa-book text-info me-2"></i>User Guide
+          <i class="fas fa-hammer text-info me-2"></i>Building Guide
         </h5>
         <p class="card-text">
-          Comprehensive guides for daily usage, content creation, and best practices.
+          Guides for building BXE designs.
         </p>
-        <a href="/docs/user-guide" class="btn btn-info btn-sm">Learn More</a>
+        <a href="/docs/building" class="btn btn-info btn-sm">Learn More</a>
       </div>
     </div>
   </div>
 </div>
 
+<!--
 ## Key Features
 
 - **Bootstrap Native**: Built entirely with Bootstrap components for consistency
@@ -61,3 +62,4 @@ Welcome to the comprehensive documentation for Berkeley eXtensible Environment. 
   <i class="fas fa-info-circle me-2"></i>
   <strong>Need Help?</strong> If you can't find what you're looking for, <a href="/contact" class="alert-link">contact our team</a>.
 </div>
+-->

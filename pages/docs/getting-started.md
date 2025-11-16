@@ -12,7 +12,7 @@ breadcrumbs:
 prev_page:
   title: Connecting
   url: /docs/environment/connecting
-navbar: true
+navbar: false
 parent: Environment
 permalink: /docs/environment/getting-started
 order: 22

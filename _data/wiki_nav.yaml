@@ -12,9 +12,9 @@ sections:
       - title: Connecting
         url: /docs/environment/connecting
         icon: fas fa-link
-      - title: Getting Started
-        url: /docs/environment/getting-started
-        icon: fas fa-play
+      - title: First Time
+        url: /docs/environment/first-time
+        icon: fas fa-font-awesome
   
   - title: Building
     icon: fas fa-hammer
@@ -25,9 +25,9 @@ sections:
       - title: Software Walkthrough
         url: /docs/building/software-walkthrough
         icon: fas fa-code
-      - title: Container Walkthrough
-        url: /docs/building/container
-        icon: fas fa-box-open
+      # - title: Container Walkthrough
+      #   url: /docs/building/container
+      #   icon: fas fa-box-open
 
   - title: Running
     icon: fas fa-person-running

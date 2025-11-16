@@ -17,7 +17,7 @@ prev_page:
   url: /docs/environment/
 next_page:
   title: Getting Started
-  url: /docs/environment/getting-started
+  url: /docs/environment/first-time
 navbar: false
 parent: Environment
 order: 21
@@ -63,7 +63,7 @@ You can log into your BXE VM directly from your host using SSH ProxyJump (`-J` o
 ### Command Line
 
 ```shell
-ssh -i <LOCAL-PATH-TO-BXE-SSH-PRIVATEKEY> -J <USERNAME>@bxe.lbl.gov bxeuser@firesim-xxx
+ssh -i <LOCAL-PATH-TO-BXE-SSH-PRIVATEKEY> -J <USERNAME>@bxe.lbl.gov <USERNAME>@bxe-xxx
 ```
 
 <!-- ## SSH Config (used for [![vscode](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png){height=24px} `vscode`](https://code.visualstudio.com/download)) -->
@@ -72,9 +72,9 @@ ssh -i <LOCAL-PATH-TO-BXE-SSH-PRIVATEKEY> -J <USERNAME>@bxe.lbl.gov bxeuser@fire
 If you use <a class="icon-link" href="https://code.visualstudio.com/download" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" class="bi" alt="VS Code"> VSCode</a>, add the following to your local `~/.ssh/config`:
 
 ```conf
-Host firesim-xxx
-  Hostname firesim-xxx
-  User bxeuser
+Host bxe-xxx
+  Hostname bxe-xxx
+  User <USERNAME>
   IdentityFile <LOCAL-PATH-TO-BXE-SSH-PRIVATEKEY>
   ProxyJump <USERNAME>@bxe.lbl.gov
 ```
@@ -82,23 +82,23 @@ Host firesim-xxx
 You can now simply login with:
 
 ```shell
-ssh firesim-xxx
+ssh bxe-xxx
 ```
 
 ## Opening a Persistent Session on BXE FireSim Nodes
 With any remote connection, disruptions happen. This can mean losing your work, like a running simulation, a custom architecture build, etc. Once you have established a connection to you BXE FireSim node, we recommend performing any work in a persistent session.
 
-Below you'll find some instructions on two options we provide.
+Below you'll find some instructions on options we provide.
 
 ### Using `tmux`
 
 Log into your assigned BXE FireSim node and launch `tmux`.
 
 ```shell
-$ ssh -i <LOCAL-PATH-TO-BXE-SSH-PRIVATEKEY> -J <USERNAME>@bxe.lbl.gov bxeuser@firesim-xxx
-Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.15.0-71-generic x86_64)
+$ ssh -i <LOCAL-PATH-TO-BXE-SSH-PRIVATEKEY> -J <USERNAME>@bxe.lbl.gov <USERNAME>@bxe-xxx
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-35-generic x86_64)
 # ...
-bxeuser@firesim-xxx:~$ tmux
+<USERNAME>@bxe-xxx:~$ tmux
 ```
 
 - To launch a new `tmux` window: <kbd>Ctrl</kbd>/<kbd>&#8984;cmd</kbd>+<kbd>b</kbd>, then type <kbd>:new</kbd>
@@ -110,22 +110,42 @@ bxeuser@firesim-xxx:~$ tmux
     <p>This <a href="https://tmuxcheatsheet.com/" target="_blank"><code>tmux</code> Cheat Sheet & Quick Reference</a> is a good resource.</p>
 </div>
 
+### Using `xrdp`
+
+Your BXE node comes installed with `xrdp`. However, you'll have to forward the RDP port with SSH tunneling. In this example, we will use:
+
+- SSH Tunnel port: `:9501`
+- RDP port: `:3389`
+
+---
+
+Log into your designated BXE node, tunneling the you desired SSH port to the RDP port.
+
+```shell
+$ ssh -L 9501:localhost:3389 -i <LOCAL-PATH-TO-BXE-SSH-PRIVATEKEY> -J <USERNAME>@bxe.lbl.gov <USERNAME>@bxe-xxx
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-35-generic x86_64)
+# ...
+<USERNAME>@bxe-xxx:~$ 
+```
+
+Open your RDP Viewer of choice and connect to the SSH Tunnel port: `localhost:9501`.
+
 ### Using VNC
 
-Your BXE FireSim node comes installed with TigerVNC. However, you'll have to forward the VNC port with SSH tunneling. While you can use any VNC port and any port on the login node, we recommend the following settings. In this example, we will use:
+Your BXE node comes installed with TigerVNC. However, you'll have to forward the VNC port with SSH tunneling. While you can use any VNC port and any port on the login node, we recommend the following settings. In this example, we will use:
 
 - SSH Tunnel port: `:9501`
 - VNC Port: `:1` (TCP Port: `:5901`)
 
 ---
 
-Log into your designated BXE FireSim node, tunneling the you desired SSH port to your VNC port. Once logged in, launch `vncserver` with your desired port.
+Log into your designated BXE  node, tunneling the you desired SSH port to your VNC port. Once logged in, launch `vncserver` with your desired port.
 
 ```shell
-$ ssh -L 9501:localhost:5901 -i <LOCAL-PATH-TO-BXE-SSH-PRIVATEKEY> -J <USERNAME>@bxe.lbl.gov bxeuser@firesim-xxx
-Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.15.0-71-generic x86_64)
+$ ssh -L 9501:localhost:5901 -i <LOCAL-PATH-TO-BXE-SSH-PRIVATEKEY> -J <USERNAME>@bxe.lbl.gov <USERNAME>@bxe-xxx
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-35-generic x86_64)
 # ...
-bxeuser@firesim-xxx:~$ vncserver :1
+<USERNAME>@bxe-xxx:~$ vncserver :1
 ```
 
-Open your VNC Viewer of choice and open the SSH Tunnel port: `localhost:9501`.
+Open your VNC Viewer of choice and connect to the SSH Tunnel port: `localhost:9501`.
