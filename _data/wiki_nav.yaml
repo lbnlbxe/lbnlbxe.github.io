@@ -5,6 +5,9 @@ sections:
       - title: Docs Home
         url: /docs/
         icon: fas fa-home
+      - title: What's New
+        url: /docs/whats-new
+        icon: fas fa-sun
 
   - title: BXE Environment
     icon: fas fa-seedling

@@ -19,6 +19,11 @@ title: Home
 </div>
 
 <div class="container my-5">
+
+    <div class="alert alert-success mt-4" role="alert">
+        <strong>BXE v2.3.0 Released!</strong> Check out the <a href="{{ '/docs/whats-new' | relative_url }}">What's New</a> page to learn about new features of BXE.
+    </div>
+
     <section id="about">
         <div class="lbnl-accent">
             <h2>About This Project</h2>
