@@ -26,7 +26,7 @@ Welcome to the comprehensive documentation for Berkeley eXtensible Environment. 
         <p class="card-text">
           New to the project? Start here to learn the basics and get up and running quickly.
         </p>
-        <a href="/docs/environment" class="btn btn-primary btn-sm">Get Started</a>
+        <a href="{{ '/docs/environment' | relative_url }}" class="btn btn-primary btn-sm">Get Started</a>
       </div>
     </div>
   </div>
@@ -40,7 +40,7 @@ Welcome to the comprehensive documentation for Berkeley eXtensible Environment. 
         <p class="card-text">
           Guides for building BXE designs.
         </p>
-        <a href="/docs/building" class="btn btn-info btn-sm">Learn More</a>
+        <a href="{{ '/docs/building' | relative_url }}" class="btn btn-info btn-sm">Learn More</a>
       </div>
     </div>
   </div>

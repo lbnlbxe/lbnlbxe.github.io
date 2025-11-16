@@ -31,7 +31,7 @@ This section is about introducing you to the BXE environment.
         <p class="card-text">
           Walkthrough guide to connecting to the LBNL BXE Cluster.
         </p>
-        <a href="/docs/environment/connecting" class="btn btn-primary btn-sm">Learn More</a>
+        <a href="{{ '/docs/environment/connecting' | relative_url }}" class="btn btn-primary btn-sm">Learn More</a>
       </div>
     </div>
   </div>
@@ -45,7 +45,7 @@ This section is about introducing you to the BXE environment.
         <p class="card-text">
           Walkthrough guide for installing the BXE environment the first time you log into your BXE node.
         </p>
-        <a href="/docs/environment/first-time" class="btn btn-primary btn-sm">Learn More</a>
+        <a href="{{ '/docs/environment/first-time' | relative_url }}" class="btn btn-primary btn-sm">Learn More</a>
       </div>
     </div>
   </div>
