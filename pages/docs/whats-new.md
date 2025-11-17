@@ -7,7 +7,7 @@ category: Home
 navbar: true
 parent: Documentation
 permalink: /docs/whats-new
-order: 11
+order: 2
 ---
 
 ## v2.3.0 - 2025 November 15
