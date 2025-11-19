@@ -49,6 +49,7 @@ title: Home
                                 <li>FireMarshal - <a href="https://firemarshal.readthedocs.io/en/latest/Tutorials/quickstart.html" target="_blank">Quick Start Tutorial</a></li>
                                 <li>FireMarshal - <a href="https://firemarshal.readthedocs.io/en/latest/Tutorials/custom.html" target="_blank">Custom Workloads</a></li>
                             </ul></li>
+                            <li><a href="https://docs.fires.im/en/main/Advanced-Usage/FireAxe-Partitioning-onto-Multiple-FPGAs/index.html" target="_blank">FireAxe Basics</a></li>
                         </ul></p>
                     </div>
                 </div>
