@@ -12,7 +12,7 @@ breadcrumbs:
 navbar: true
 parent: Documentation
 permalink: /docs/building
-order: 4
+order: 5
 ---
 
 # Building Custom Designs

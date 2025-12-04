@@ -12,7 +12,7 @@ breadcrumbs:
 navbar: true
 parent: Documentation
 permalink: /docs/running
-order: 5
+order: 4
 ---
 
 # Running Designs

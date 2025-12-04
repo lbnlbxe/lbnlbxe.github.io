@@ -16,8 +16,8 @@ prev_page:
   title: BXE Environment
   url: /docs/environment/building
 next_page:
-  title: Getting Started
-  url: /docs/environment/getting-started
+  title: Default FireSim Simulation
+  url: /docs/running/default-sim/
 navbar: false
 parent: Environment
 order: 22
@@ -32,7 +32,7 @@ This guide explains how to use the `/opt/bxe/installBXE.sh` script to set up BXE
 
 The `/opt/bxe/installBXE.sh` script automates the installation of Chipyard and FireSim for the BXE environment. It supports three installation modes:
 
-1. **Chipyard** - Install Chipyard with FireSim integration
+1. **Chipyard** - Install Chipyard with FireSim integration **&larr; _Default Use Case_**
 2. **FireSim** - Install standalone FireSim
 3. **BXE Config** - Install BXE-specific configurations into an existing FireSim installation
 
@@ -53,6 +53,13 @@ The `/opt/bxe/installBXE.sh` script automates the installation of Chipyard and F
 ```
 
 This will install Chipyard to `$HOME/chipyard` (or prompt for an alternative if it already exists).
+
+<div class="alert alert-primary mt-4">
+    <h5><strong><i class="fas fa-info-circle me-2"></i>NOTE</strong></h5>
+    <p>Once the install completes, you'll be given an SSH Public key. Please submit this to the BXE team so your account can access FPGA resources to run your designs.
+    <br/>
+    Once confirmed, you're ready to start <a href="{{ '/docs/running/default-sim' | relative_url }}">running simulations</a> on the FPGA.</p>
+</div>
 
 ### Install Standalone FireSim
 

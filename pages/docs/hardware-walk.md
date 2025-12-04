@@ -13,14 +13,14 @@ breadcrumbs:
   - title: Hardware Walkthrough
     url: /docs/building/hardware-walkthrough/
 prev_page:
-  title: Building Custom Designs
-  url: /docs/building/
+  title: Default FireSim Simulation
+  url: /docs/running/default-sim/
 next_page:
   title: Software Walkthrough
   url: /docs/building/software-walkthrough/
 navbar: false
 parent: Building
-order: 31
+order: 41
 permalink: /docs/building/hardware-walkthrough/
 ---
 

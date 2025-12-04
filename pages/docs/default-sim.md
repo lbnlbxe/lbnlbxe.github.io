@@ -13,11 +13,14 @@ breadcrumbs:
   - title: Default FireSim Simulation
     url: /docs/running/default-sim/
 prev_page:
-  title: Running Designs
-  url: /docs/running/
+  title: First Time
+  url: /docs/environment/first-time/
+next_page:
+  title: Hardware Walkthrough
+  url: /docs/building/hardware-walkthrough/
 navbar: false
 parent: Running
-order: 41
+order: 31
 permalink: /docs/running/default-sim/
 ---
 

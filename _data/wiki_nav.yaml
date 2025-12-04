@@ -18,7 +18,14 @@ sections:
       - title: First Time
         url: /docs/environment/first-time
         icon: fas fa-font-awesome
-  
+
+  - title: Running
+    icon: fas fa-person-running
+    pages:
+      - title: Default Simulation
+        url: /docs/running/default-sim
+        icon: fas fa-fire-flame-curved
+
   - title: Building
     icon: fas fa-hammer
     pages:
@@ -31,10 +38,3 @@ sections:
       # - title: Container Walkthrough
       #   url: /docs/building/container
       #   icon: fas fa-box-open
-
-  - title: Running
-    icon: fas fa-person-running
-    pages:
-      - title: Default Simulation
-        url: /docs/running/default-sim
-        icon: fas fa-fire-flame-curved

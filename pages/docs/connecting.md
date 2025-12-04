@@ -16,7 +16,7 @@ prev_page:
   title: BXE Environment
   url: /docs/environment/
 next_page:
-  title: Getting Started
+  title: First Time
   url: /docs/environment/first-time
 navbar: false
 parent: Environment
