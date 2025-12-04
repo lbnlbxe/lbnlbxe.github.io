@@ -28,14 +28,14 @@ permalink: /docs/running/default-sim/
 
 The BXE FireSim node is set up to run a Single-Core Rocket RISC-V core with a scratchpad memory on FPGA. Here are the steps to run that example.
 
-1. Once logged into your node, change directories to the `firesim` and source FireSim to add it to your path.
+1\. Once logged into your node, change directories to the `firesim` and source FireSim to add it to your path.
 
 ```shell
 cd $FIRESIM_ROOT
 source sourceme-manager.sh --skip-ssh-setup
 ```
 
-2. Make sure your `$FIRESIM_ROOT/deploy/config_runtime.yaml` looks like the following:
+2\. Make sure your `$FIRESIM_ROOT/deploy/config_runtime.yaml` looks like the following:
 
 ```yaml
 # Run-time configuration for the FireSim Simulation Manager
@@ -145,7 +145,7 @@ synth_print:
 # DOCREF END: Synthesized Prints
 ```
 
-2. Set up the simulation infrastructure. This will build and deploy all of the software for a FireSim simulation, as well as prepare the FPGA for simulation.
+3\. Set up the simulation infrastructure. This will build and deploy all of the software for a FireSim simulation, as well as prepare the FPGA for simulation.
 
 ```shell
 firesim infrasetup -a ${CY_DIR}/sims/firesim-staging/sample_config_hwdb.yaml -r ${CY_DIR}/sims/firesim-staging/sample_config_build_recipes.yaml
@@ -238,7 +238,7 @@ The full log of this run is:
 /home/bxeuser/chipyard/sims/firesim/deploy/logs/2024-10-31--22-18-09-infrasetup-ZW0RGPULZGU4NVFL.log
 ```
 
-4. Run your simulation!
+4\. Run your simulation!
 
 ```shell
 firesim runworkload -a ${CY_DIR}/sims/firesim-staging/sample_config_hwdb.yaml -r ${CY_DIR}/sims/firesim-staging/sample_config_build_recipes.yaml
