@@ -12,7 +12,7 @@ breadcrumbs:
 navbar: true
 parent: Documentation
 permalink: /docs/environment
-order: 2
+order: 3
 ---
 
 # BXE Environment

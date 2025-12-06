@@ -20,7 +20,7 @@ next_page:
   url: /docs/building/hardware-walkthrough/
 navbar: false
 parent: Running
-order: 31
+order: 41
 permalink: /docs/running/default-sim/
 ---
 

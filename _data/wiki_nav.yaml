@@ -7,7 +7,7 @@ sections:
         icon: fas fa-home
       - title: What's New
         url: /docs/whats-new
-        icon: fas fa-sun
+        icon: fas fa-lightbulb
 
   - title: BXE Environment
     icon: fas fa-seedling
@@ -15,9 +15,9 @@ sections:
       - title: Connecting
         url: /docs/environment/connecting
         icon: fas fa-link
-      - title: First Time
+      - title: First Time Install
         url: /docs/environment/first-time
-        icon: fas fa-font-awesome
+        icon: fas fa-map-marker-alt
 
   - title: Running
     icon: fas fa-person-running
@@ -38,3 +38,11 @@ sections:
       # - title: Container Walkthrough
       #   url: /docs/building/container
       #   icon: fas fa-box-open
+
+  - title: Advanced Documentation
+    icon: fas fa-gears
+    pages:
+      - title: Experimental
+        url: /docs/experimental
+        icon: fas fa-gear
+

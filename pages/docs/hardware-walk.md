@@ -20,7 +20,7 @@ next_page:
   url: /docs/building/software-walkthrough/
 navbar: false
 parent: Building
-order: 41
+order: 51
 permalink: /docs/building/hardware-walkthrough/
 ---
 

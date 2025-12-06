@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: Connecting
-description: Learn how to get started with this documentation system
+title: Connecting to BXE
+description: Learn how to connect to the BXE cluster
 author: Berkeley eXtensible Environment Team
 category: Guide
 author: Berkeley eXtensible Environment Team
@@ -20,11 +20,9 @@ next_page:
   url: /docs/environment/first-time
 navbar: false
 parent: Environment
-order: 21
+order: 31
 permalink: /docs/environment/connecting/
 ---
-
-# Connecting to BXE
 
 ## Requesting a BXE Account
 
