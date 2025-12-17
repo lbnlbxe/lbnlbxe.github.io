@@ -106,4 +106,16 @@ BXE Install Complete!
 
 As the installer suggests, send that SSH key to the BXE team so that you can access the FPGA hardware to run your simulations.
 
+## Initializing FireSim Config Files
+
+Initialize the FireSim manager to work with AMD/Xilinx Alveo U250:
+
+```bash
+ firesim managerinit --platform xilinx_alveo_u250
+```
+
+This will set up `config_build_recipes.yaml`, `config_build.yaml`, `config_hwdb.yaml`, and `config_runtime.yaml`.
+
+---
+
 You're now ready to run FireSim simulations and build your own FireSim designs. Happy Building!
