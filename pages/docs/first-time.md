@@ -111,7 +111,8 @@ As the installer suggests, send that SSH key to the BXE team so that you can acc
 Initialize the FireSim manager to work with the AMD/Xilinx Alveo U250. Perform the following steps:
 
 ```bash
-source $FIRESIM_ROOT/sourceme-manager.sh --skip-ssh-setup
+cd $FIRESIM_ROOT
+source sourceme-manager.sh --skip-ssh-setup
 firesim managerinit --platform xilinx_alveo_u250
 ```
 
