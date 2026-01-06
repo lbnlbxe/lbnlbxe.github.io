@@ -65,7 +65,7 @@ run_farm:
     #     # by "four_fpgas_spec" below.
     #     - "111.111.1.111": four_fpgas_spec
     run_farm_hosts_to_use:
-        - wilson.lbl.gov: eight_fpgas_spec
+        - bxeuser@vizion.lbl.gov: eight_fpgas_spec
 
 metasimulation:
   metasimulation_enabled: false
