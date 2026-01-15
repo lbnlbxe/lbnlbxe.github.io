@@ -64,10 +64,10 @@ build_farm:
     #     - "222.222.2.222":
     #         override_build_dir: /scratch/specific-build-host-build-dir
     build_farm_hosts:
-        - localhost
-```
+      - bxeuser@vizion.lbl.gov
+      - bxeuser@wilson.lbl.gov```
 
-This tells FireSim to place all of the build files in `/home/bxeuser/firesim/FIRESIM_BUILD_DIR` on the run farm hosts. You can change this to any location you'd like.
+This tells FireSim to place all of the build files in `/home/bxeuser/FIRESIM_BUILD_DIR` on the run farm hosts. You can change this to any location you'd like.
 
 Next we need to tell FireSim which designs we would like to build. `builds_to_run` lists all of the recipes that we'd like FireSim to build from scratch. Since we only want FireSim to build a `alveo_u250_firesim_rocket_dualcore_nic` recipe, we make sure we add it and comment out the other recipes. Here's what the `builds_to_run` section should look like:
 
@@ -104,7 +104,8 @@ build_farm:
       #         - "222.222.2.222":  
       #                 override_build_dir: /scratch/specific-build-host-build-dir  
       build_farm_hosts:
-          - localhost
+        - bxeuser@vizion.lbl.gov
+        - bxeuser@wilson.lbl.gov
 
 builds_to_run:
     # this section references builds defined in config_build_recipes.yaml
@@ -113,57 +114,8 @@ builds_to_run:
     # Configs for BXE
     - alveo_u250_firesim_rocket_dualcore_nic
 
-    # Unnetworked designs use a three-domain configuration
-    # Tiles: 1000 MHz
-    #    <Rational Crossing>
-    # Uncore: 500 MHz
-    #    <Async Crossing>
-    # DRAM : 1000 MHz
-    # - firesim_rocket_quadcore_no_nic_l2_llc4mb_ddr3
-    # - firesim_boom_singlecore_no_nic_l2_llc4mb_ddr3
-
-    # All NIC-based designs use the legacy FireSim frequency selection, with the
-    # tiles and uncore running at 3.2 GHz to sustain 200Gb theoretical NIC BW
-    # - firesim_supernode_rocket_singlecore_nic_l2_lbp
-    # - firesim_rocket_quadcore_nic_l2_llc4mb_ddr3
-    # - firesim_boom_singlecore_nic_l2_llc4mb_ddr3
-
-    # Configs for tutorials
-    # - firesim_rocket_singlecore_no_nic_l2_lbp
-    # - firesim_rocket_singlecore_sha3_nic_l2_llc4mb_ddr3
-    # - firesim_rocket_singlecore_sha3_no_nic_l2_llc4mb_ddr3
-    # - firesim_rocket_singlecore_sha3_no_nic_l2_llc4mb_ddr3_printf
-    # - firesim_gemmini_rocket_singlecore_no_nic
-    # - firesim_gemmini_printf_rocket_singlecore_no_nic
-
-    # Configs for Vitis/XRT
-    # - vitis_firesim_rocket_singlecore_no_nic
-
-    # Config for RHSResearch Nitefury II
-    # - nitefury_firesim_rocket_singlecore_no_nic
-
-    # Configs for Xilinx Alveo U250/U280
-    # - alveo_u250_firesim_rocket_singlecore_no_nic
-    # - alveo_u250_firesim_gemmini_rocket_singlecore_no_nic
-    # - alveo_u200_firesim_rocket_singlecore_no_nic
-    # - alveo_u280_firesim_rocket_singlecore_no_nic
-
-    # Config for Xilinx VCU118
-    # - xilinx_vcu118_firesim_rocket_singlecore_4GB_no_nic
-
 agfis_to_share:
-    - firesim_rocket_quadcore_nic_l2_llc4mb_ddr3
-    - firesim_rocket_quadcore_no_nic_l2_llc4mb_ddr3
-    - firesim_boom_singlecore_no_nic_l2_llc4mb_ddr3
-    - firesim_boom_singlecore_nic_l2_llc4mb_ddr3
-
-    - firesim_supernode_rocket_singlecore_nic_l2_lbp
-
-    # Configs for tutorials
-    # - firesim_rocket_singlecore_no_nic_l2_lbp
-    # - firesim_rocket_singlecore_sha3_nic_l2_llc4mb_ddr3
-    # - firesim_rocket_singlecore_sha3_no_nic_l2_llc4mb_ddr3
-    # - firesim_rocket_singlecore_sha3_no_nic_l2_llc4mb_ddr3_printf
+    # - midasexamples_gcd
 
 share_with_accounts:
     # To share with a specific user:
@@ -183,6 +135,7 @@ Add the following to the end of `$FIRESIM_ROOT/deploy/config_build_recipes.yaml`
 alveo_u250_firesim_rocket_dualcore_nic:
     PLATFORM: xilinx_alveo_u250
     TARGET_PROJECT: firesim
+    TARGET_PROJECT_MAKEFRAG: ../../../generators/firechip/chip/src/main/makefrag/firesim
     DESIGN: FireSim
     TARGET_CONFIG: WithNIC_FireSimDualRocketConfig
     PLATFORM_CONFIG: BaseXilinxAlveoU250Config
@@ -207,9 +160,8 @@ Let's add our design to the list of designs available to FireSim. Open `$CHIPYAR
 // BXE FireSim Dual-Core Rocket
 class FireSimDualRocketConfig extends Config(
   new WithDefaultFireSimBridges ++
-  new WithDefaultMemModel ++
   new WithFireSimConfigTweaks ++
-  new freechips.rocketchip.subsystem.WithNBigCores(2) ++
+  new freechips.rocketchip.rocket.WithNHugeCores(2) ++
   new chipyard.config.AbstractConfig)
 ```
 
@@ -238,41 +190,51 @@ Your bitstream has been created!
 Add
 
 alveo_u250_firesim_rocket_dualcore_nic:
-    bitstream_tar: file:///home/bxeuser/firesim/deploy/results-build/2024-07-17--17-33-00-alveo_u250_firesim_rocket_dualcore_nic/cl_xilinx_alveo_u250-firesim-FireSim-WithNIC-FireSimDualRocketConfig-BaseXilinxAlveoU250Config/firesim.tar.gz
+    bitstream_tar: file://$HOME/firesim/deploy/results-build/2024-07-17--17-33-00-alveo_u250_firesim_rocket_dualcore_nic/cl_xilinx_alveo_u250-firesim-FireSim-WithNIC-FireSimDualRocketConfig-BaseXilinxAlveoU250Config/firesim.tar.gz
     deploy_quintuplet_override: null
     custom_runtime_config: null
 
 to your config_hwdb.yaml to use this hardware configuration.
-Build complete! Xilinx Alveo xilinx_alveo_u250 bitstream ready. See /home/bxeuser/firesim/deploy/built-hwdb-entries/alveo_u250_firesim_rocket_dualcore_nic.
+Build complete! Xilinx Alveo xilinx_alveo_u250 bitstream ready. See $HOME/firesim/deploy/built-hwdb-entries/alveo_u250_firesim_rocket_dualcore_nic.
 The full log of this run is:
-/home/bxeuser/firesim/deploy/logs/2024-07-17--17-33-00-buildbitstream-3P5LQGXVOH0DNATS.log
+$HOME/firesim/deploy/logs/2024-07-17--17-33-00-buildbitstream-3P5LQGXVOH0DNATS.log
 ```
 
 # Running a Custom Design
 Now that the build is complete, we need to tell FireSim that this design is available to be run. We'll add `alveo_u250_firesim_rocket_dualcore_nic` to FireSim's hardware database, then configure the simulation to use the new design.
 
 ## `$FIRESIM_ROOT/deploy/config_hwdb.yaml`
-Using the path generated in the build step, we add an entry to the hardware database. Add the following to the end of the file:
+Using the path generated in the build step, we add an entry to the hardware database. The entry you add at the end of the file should look something like this:
 
 ```yaml
 alveo_u250_firesim_rocket_dualcore_nic:
-    bitstream_tar: file:///home/bxeuser/firesim/deploy/results-build/2024-07-17--17-33-00-alveo_u250_firesim_rocket_dualcore_nic/cl_xilinx_alveo_u250-firesim-FireSim-WithNIC-FireSimDualRocketConfig-BaseXilinxAlveoU250Config/firesim.tar.gz
+    bitstream_tar: file://$HOME/firesim/deploy/results-build/2024-07-17--17-33-00-alveo_u250_firesim_rocket_dualcore_nic/cl_xilinx_alveo_u250-firesim-FireSim-WithNIC-FireSimDualRocketConfig-BaseXilinxAlveoU250Config/firesim.tar.gz
     deploy_quintuplet_override: null
     custom_runtime_config: null
 ```
 
 ## `$FIRESIM_ROOT/deploy/config_runtime.yaml`
-Now we're ready to deploy this design in the simulation. We modify this file to tell FireSim what the target design we're going to simulate. In the `target_config` section, change the `default_hw_config` to point to our new design, `alveo_u250_firesim_rocket_dualcore_nic`. It should resemble this:
+Now we're ready to deploy this design in the simulation. We modify this file to tell FireSim what the target design we're going to simulate. In the `target_config` section, change the `default_hw_config` to point to our new design, `alveo_u250_firesim_rocket_dualcore_nic`. Since our design includes a NIC, we can deploy the design on multiple FPGAs (`no_net_num_nodes: 8`) and add a network topology (`topology: example_8config`) to connect them together. It should resemble this:
 
 ```yaml
 target_config:
-    topology: no_net_config
-    no_net_num_nodes: 1
+    topology: example_8config
+    no_net_num_nodes: 8
     link_latency: 6405
     switching_latency: 10
     net_bandwidth: 200
     profile_interval: -1
+
+    # This references a section from config_hwdb.yaml for fpga-accelerated simulation
+    # or from config_build_recipes.yaml for metasimulation
+    # In homogeneous configurations, use this to set the hardware config deployed
+    # for all simulators
     default_hw_config: alveo_u250_firesim_rocket_dualcore_nic
+
+    # Advanced: Specify any extra plusargs you would like to provide when
+    # booting the simulator (in both FPGA-sim and metasim modes). This is
+    # a string, with the contents formatted as if you were passing the plusargs
+    # at command line, e.g. "+a=1 +b=2"
     plusarg_passthrough: ""
 ```
 
@@ -281,8 +243,8 @@ We can now run the design and boot Linux on this design. Following the tutorial 
 
 ```shell
 cd $FIRESIM_ROOT
-firesim infrasetup -a ${CY_DIR}/sims/firesim-staging/sample_config_hwdb.yaml -r ${CY_DIR}/sims/firesim-staging/sample_config_build_recipes.yaml
-firesim runworkload -a ${CY_DIR}/sims/firesim-staging/sample_config_hwdb.yaml -r ${CY_DIR}/sims/firesim-staging/sample_config_build_recipes.yaml
+firesim infrasetup
+firesim runworkload
 ```
 
 In a separate window, log into the runner machine and run:
@@ -291,7 +253,13 @@ In a separate window, log into the runner machine and run:
 screen -r fsim0
 ```
 
-Wait for the console to boot, then verify multiple cores in the booted simulation:
+Wait for the console to boot. You can log into the Buildroot with the following credentials:
+
+> Username: `root`
+>
+> Password: [No Password]
+
+Verify multiple cores in the booted simulation:
 
 ```shell
 # cat /proc/cpuinfo 
@@ -315,6 +283,12 @@ mimpid          : 0x20181004
 ```
 
 Congratulations! You have now simulated a dual-core RISC-V Rocket Core and booted Linux on an FPGA! 🍾 🍾 🍾
+
+Make sure to end the simulation by shutting down the simulation with the following command:
+
+```bash
+poweroff -f
+```
 
 ## Building BlackBox Designs
 

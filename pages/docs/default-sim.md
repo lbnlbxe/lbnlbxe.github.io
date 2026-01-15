@@ -562,3 +562,15 @@ Boot HART MEDELEG         : 0x000000000000b109
 ```
 
 Congratulations! You have now simulated a RISC-V Core and booted Linux on an FPGA! 🍾 🍾 🍾
+
+You can log into the Buildroot with the following credentials:
+
+> Username: `root`
+>
+> Password: [No Password]
+
+Make sure to end the simulation by shutting down the simulation with the following command:
+
+```bash
+poweroff -f
+```
