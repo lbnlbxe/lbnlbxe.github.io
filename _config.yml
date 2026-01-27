@@ -1,7 +1,7 @@
 title: Berkeley eXtensible Environment
 description: LBNL-hosted, FPGA-based Computer Architecture Simulation Environment
-baseurl: "/bxe"
-url: "https://lbnlcomputerarch.github.io"
+baseurl: ""
+url: "https://lbnlbxe.github.io"
 
 # Legal/Funding Acknowledgment (appears in footer accordion)
 # This section is configured during setup. To modify or disable:
