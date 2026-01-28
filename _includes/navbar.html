@@ -53,6 +53,12 @@
                         {% endif %}
                     {% endunless %}
                 {% endfor %}
+                {% if site.github_repo and site.github_repo != '' %}
+                    <!-- GitHub Repository nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.github_repo }}" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                    </li>
+                {% endif %}
             </ul>
             
             <button class="btn btn-outline-secondary" id="theme-toggle" aria-label="Toggle dark mode">

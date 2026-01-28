@@ -10,6 +10,11 @@ permalink: /docs/whats-new
 order: 2
 ---
 
+## v3.0.0 - 2026 January 28
+
+- **Public Release**: Public release of [BXE source code](https://github.com/lbnlbxe/bxe)
+- Minor Bugfixes
+
 ## v2.3.0 - 2025 November 15
 
 - **Multi-tenancy**: multiple users can have their own checkout of Chipyard/FireSim within the same VM

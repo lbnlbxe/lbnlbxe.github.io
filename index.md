@@ -10,6 +10,7 @@ title: Home
                 <h1 class="display-5 fw-normal"><strong>B</strong>erkeley e<strong>X</strong>tensible <strong>E</strong>nvironment (BXE)</h1>
                 <p class="lead mb-4">LBNL-hosted, FPGA-based Computer Architecture Simulation Environment</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <a href="{{ site.github_repo }}" class="btn btn-primary btn-lg" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
                     <a href="{{ '/about' | relative_url }}" class="btn btn-secondary btn-lg">Learn More</a>
                     <a href="{{ '/docs' | relative_url }}" class="btn btn-outline-secondary btn-lg">Documentation</a>
                 </div>
@@ -21,7 +22,7 @@ title: Home
 <div class="container my-5">
 
     <div class="alert alert-success mt-4" role="alert">
-        <strong>BXE v2.3.0 Released!</strong> Check out the <a href="{{ '/docs/whats-new' | relative_url }}">What's New</a> page to learn about new features of BXE.
+        <strong>BXE v3.0.0 Released!</strong> Check out the <a href="{{ '/docs/whats-new' | relative_url }}">What's New</a> page to learn about new features of BXE.
     </div>
 
     <section id="about">
