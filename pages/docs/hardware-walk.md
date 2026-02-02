@@ -65,7 +65,8 @@ build_farm:
     #         override_build_dir: /scratch/specific-build-host-build-dir
     build_farm_hosts:
       - bxeuser@vizion.lbl.gov
-      - bxeuser@wilson.lbl.gov```
+      - bxeuser@wilson.lbl.gov
+```
 
 This tells FireSim to place all of the build files in `/home/bxeuser/FIRESIM_BUILD_DIR` on the run farm hosts. You can change this to any location you'd like.
 
