@@ -15,7 +15,7 @@ order: 1
 Welcome to the comprehensive documentation for Berkeley eXtensible Environment. This documentation is designed to help you understand, configure, and extend our project.
 
 <div class="alert alert-success mt-4" role="alert">
-  <strong>BXE v3.0.0 Released!</strong> Check out the <a href="{{ '/docs/whats-new' | relative_url }}">What's New</a> page to learn about new features of BXE.
+  <strong>BXE v3.0.1 Released!</strong> Check out the <a href="{{ '/docs/whats-new' | relative_url }}">What's New</a> page to learn about new features of BXE.
 </div>
 
 ## UCB BAR Documentation

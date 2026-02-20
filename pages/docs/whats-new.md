@@ -10,7 +10,11 @@ permalink: /docs/whats-new
 order: 2
 ---
 
-## v3.0.0 - 2026 January 28
+## [v3.0.1](https://github.com/lbnlbxe/bxe/releases/tag/v3.0.1) - 2026 February 19
+
+- Updates to setupBXE.sh to account for AMD/Xilinx Tools prerequisites.
+
+## [v3.0.0](https://github.com/lbnlbxe/bxe/releases/tag/v3.0.0) - 2026 January 28
 
 - **Public Release**: Public release of [BXE source code](https://github.com/lbnlbxe/bxe)
 - Minor Bugfixes

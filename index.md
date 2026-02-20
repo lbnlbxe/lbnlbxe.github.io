@@ -22,7 +22,7 @@ title: Home
 <div class="container my-5">
 
     <div class="alert alert-success mt-4" role="alert">
-        <strong>BXE v3.0.0 Released!</strong> Check out the <a href="{{ '/docs/whats-new' | relative_url }}">What's New</a> page to learn about new features of BXE.
+        <strong>BXE v3.0.1 Released!</strong> Check out the <a href="{{ '/docs/whats-new' | relative_url }}">What's New</a> page to learn about new features of BXE.
     </div>
 
     <section id="about">
