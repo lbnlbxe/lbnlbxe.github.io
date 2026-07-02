@@ -1,4 +1,4 @@
-# [lbnlbxe.github.io](https://lbnl.github.io)
+# [lbnlbxe.github.io](https://lbnlbxe.github.io)
 
 A professional Jekyll template for Lawrence Berkeley National Laboratory research projects, featuring responsive design, dark mode support, and LBNL brand compliance.
 
