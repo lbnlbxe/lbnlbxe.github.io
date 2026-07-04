@@ -1,80 +1,41 @@
 ---
-layout: default
+layout: home
 title: Home
+nav_order: 1
+permalink: /
 ---
 
-<div class="bg-dark lbnl-gradient text-white py-5">
-    <div class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h1 class="display-5 fw-normal"><strong>B</strong>erkeley e<strong>X</strong>tensible <strong>E</strong>nvironment (BXE)</h1>
-                <p class="lead mb-4">LBNL-hosted, FPGA-based Computer Architecture Simulation Environment</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                    <a href="{{ site.github_repo }}" class="btn btn-primary btn-lg" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
-                    <a href="{{ '/about' | relative_url }}" class="btn btn-secondary btn-lg">Learn More</a>
-                    <a href="{{ '/docs' | relative_url }}" class="btn btn-outline-secondary btn-lg">Documentation</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<div style="display: flex; align-items: center;">
+  <img src="{{ 'assets/logos/project-logo.png' | relative_url }}" alt="BXE Logo" style="height: 100px">&nbsp;&nbsp;<h2>Berkeley eXtensible Environment (BXE)</h2>
+</div>
+<div style="display: flex; align-items: center;">
+  <p><em>LBNL-hosted, FPGA-based Computer Architecture Simulation Environment</em></p>
 </div>
 
-<div class="container my-5">
+[Github]({{ site.github_repo }}){:target="_blank" .btn .btn-purple .mr-2}
+[Learn More]({{ '/about' | relative_url }}){: .btn .btn-blue .mr-2}
+[Documentation]({{ '/docs' | relative_url }}){: .btn .btn-green .mr-2}
 
-    <div class="alert alert-success mt-4" role="alert">
-        <strong>BXE v3.0.1 Released!</strong> Check out the <a href="{{ '/docs/whats-new' | relative_url }}">What's New</a> page to learn about new features of BXE.
-    </div>
+{: .new-title }
+> BXE v3.0.1 Released!
+>
+> Check out the [What's New]({{ '/docs/whats-new' | relative_url }}) page to learn about new features of BXE.
 
-    <section id="about">
-        <div class="lbnl-accent">
-            <h2>About This Project</h2>
-            <p><em>Build on the FireSim environment to perform extensive architecture simulation utilizing LBNL's FPGA cluster.</em></p>
-        </div>
-        
-        <p>The work presented here is based on the hard work done by the <a href="https://fires.im/" target="_blank"><i class="fas fa-fire-flame-curved" style="color: #e25822;"></i> FireSim</a> and <a href="https://chipyard.readthedocs.io/en/main/" target="_blank">🏗️ Chipyard</a> development teams at <a href="https://bar.eecs.berkeley.edu/" target="_blank">🐻 UC Berkeley Architecturre Research</a>. Many thanks for helping us bring this platform to life.
-        <br/><br/>
-        The UCB-BAR team provides docuemntation and tutorials on using FireSim and Chipyard. Most of the documentation provided here is based on those documents. Below is list of useful links for getting started with understanding how FireSim and Chipyard operate:</p>
-        
-        <div class="row mt-4">
-            <div class="col-md-6 mb-3">
-                <div class="card lbnl-card h-100">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                        <a href="https://docs.fires.im/" target="_blank" style="text-decoration: none; color: var(--bs-light); --letter-spacing: -1px; font: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,&quot;Segoe UI Symbol&quot;; font-feature-settings: &quot;kern&quot; 1; font-kerning: normal;"><i class="fas fa-fire-flame-curved" style="color: #e25822;"></i> FireSim</a></h4>
-                        <p class="card-text"><ul>
-                            <li><a href="https://docs.fires.im/en/main/FireSim-Basics.html" target="_blank">FireSim Basics</a></li>
-                            <li><a href="https://docs.fires.im/en/main/Local-FPGA-Initial-Setup.html" target="_blank">Local FPGA System Setup</a></li>
-                            <li>Defining Custom Workloads
-                            <ul>
-                                <li><a href="https://firemarshal.readthedocs.io/en/latest/" target="_blank">FireMarshal</a></li>
-                                <li>FireMarshal - <a href="https://firemarshal.readthedocs.io/en/latest/Tutorials/quickstart.html" target="_blank">Quick Start Tutorial</a></li>
-                                <li>FireMarshal - <a href="https://firemarshal.readthedocs.io/en/latest/Tutorials/custom.html" target="_blank">Custom Workloads</a></li>
-                            </ul></li>
-                            <li><a href="https://docs.fires.im/en/main/Advanced-Usage/FireAxe-Partitioning-onto-Multiple-FPGAs/index.html" target="_blank">FireAxe Basics</a></li>
-                        </ul></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <div class="card lbnl-card h-100">
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="https://chipyard.readthedocs.io/en/main/" target="_blank"><img src="https://chipyard.readthedocs.io/en/main/_images/chipyard-logo.svg" height="40" class="me-2" alt="Chipyard"></a></h4>
-                        <p class="card-text"><ul>
-                            <li><a href="https://chipyard.readthedocs.io/en/main/Chipyard-Basics/Chipyard-Components.html">Chipyard Components</a></li>
-                            <li><a href="https://chipyard.readthedocs.io/en/main/Chipyard-Basics/Development-Ecosystem.html">Development Ecosystem</a></li>
-                            <li><a href="https://chipyard.readthedocs.io/en/main/Chipyard-Basics/Configs-Parameters-Mixins.html">Configs, Parameters, Mixins</a>
-                            <ul>
-                                <li><a href="https://chipyard.readthedocs.io/en/main/Customization/index.html">Customization</a></li>
-                            </ul></li>
-                        </ul></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <div class="alert alert-info mt-4" role="alert">
-        <strong>Getting Started:</strong> Follow our <a href="{{ '/docs' | relative_url }}">documentation</a> to learn how to connect and run your own simulations on BXE!
-    </div>
-    
+### About This Project
+
+*Build on the FireSim environment to perform extensive architecture simulation utilizing LBNL's FPGA cluster.*
+
+The work presented here is based on the hard work done by the <a href="https://fires.im/" target="_blank"><i class="fas fa-fire-flame-curved" style="color: #e25822;"></i> FireSim</a> and <a href="https://chipyard.readthedocs.io/en/main/" target="_blank">🏗️ Chipyard</a> development teams at <a href="https://bar.eecs.berkeley.edu/" target="_blank">🐻 UC Berkeley Architecture Research</a>. Many thanks for helping us bring this platform to life.
+
+The UCB-BAR team provides documentation and tutorials on using FireSim and Chipyard. Most of the documentation provided here is based on those documents. Below is list of useful links for getting started with understanding how FireSim and Chipyard operate:
+
+<div class="card-grid">
+  <a href="https://docs.fires.im/" class="site-card" target="_blank">🔥<div class="card-title">FireSim</div><p>Fast and Effortless FPGA-accelerated Hardware Simulation with On-Prem and Cloud Flexibility</p></a>
+<a href="https://chipyard.readthedocs.io/en/main/" class="site-card" target="_blank">🏗️<div class="card-title">Chipyard</div><p>Framework for designing and evaluating full-system hardware using agile teams</p></a>
+<a href="https://firemarshal.readthedocs.io/en/latest/Tutorials/quickstart.html" class="site-card" target="_blank">🧑‍🚒<div class="card-title">FireMarshal</div><p>Workload generation tool for RISC-V based systems for FireSim FPGA-accelerated simulation</p></a>
 </div>
+
+{: .highlight-title}
+> Getting Started
+>
+> Follow our [documentation]({{ '/docs' | relative_url }}) to learn how to connect and run your own simulations on BXE!

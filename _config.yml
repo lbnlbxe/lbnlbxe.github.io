@@ -1,55 +1,99 @@
 title: Berkeley eXtensible Environment
 description: LBNL-hosted, FPGA-based Computer Architecture Simulation Environment
+theme: just-the-docs
 baseurl: ""
 url: "https://lbnlbxe.github.io"
+
+github_repo: "https://github.com/lbnlbxe/bxe"
+
+# color_scheme: lbnl-dark
+color_scheme: lbnl-light
+
+logo: "assets/logos/project-logo.png"
+favicon_ico: "/assets/favicon/favicon.ico"
+
+search_enabled: false
+heading_anchors: true
+enable_copy_code_button: true
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%Y %b %e at %H:%M %z" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+aux_links:
+  "BXE on GitHub": https://github.com/lbnlbxe/bxe
+aux_links_new_tab: true
+
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+
+# GitHub Pages supported plugins (automatically enabled with github-pages gem)
+plugins:
+  - jekyll-email-protect
+  # - jekyll-feed
+  # - jekyll-sitemap
+  # - jekyll-seo-tag
+
+
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "11.16.0"
 
 # Legal/Funding Acknowledgment (appears in footer accordion)
 # This section is configured during setup. To modify or disable:
 # - Edit the text below, or comment out the entire funding_acknowledgment section to hide the accordion
-funding_acknowledgment: |
-  This research is based upon work supported by the Office of the Director of National Intelligence (ODNI), 
-  Intelligence Advanced Research Projects Activity (IARPA), through the Advanced Graphical Intelligence 
-  Logical Computing Environment (AGILE) research program, under Army Research Office (ARO) contract number 
-  D2021-2106030006. The views and conclusions contained herein are those of the authors and should not be 
-  interpreted as necessarily representing the official policies or endorsements, either expressed or 
-  implied, of the ODNI, IARPA, ARO, or the U.S. Government.
+# funding_acknowledgment: |
+#   This research is based upon work supported by the Office of the Director of National Intelligence (ODNI), 
+#   Intelligence Advanced Research Projects Activity (IARPA), through the Advanced Graphical Intelligence 
+#   Logical Computing Environment (AGILE) research program, under Army Research Office (ARO) contract number 
+#   D2021-2106030006. The views and conclusions contained herein are those of the authors and should not be 
+#   interpreted as necessarily representing the official policies or endorsements, either expressed or 
+#   implied, of the ODNI, IARPA, ARO, or the U.S. Government.
 
-copyright_notice: |
-  Berkeley eXtensible Environment (BXE) Copyright (c) 2026, The Regents of the University of California, through Lawrence Berkeley National Laboratory (subject to receipt of any required approvals from the U.S. Dept. of Energy). All rights reserved.
+# copyright_notice: |
+#   Berkeley eXtensible Environment (BXE) Copyright (c) 2026, The Regents of the University of California, through Lawrence Berkeley National Laboratory (subject to receipt of any required approvals from the U.S. Dept. of Energy). All rights reserved.
 
-  If you have questions about your rights to use or distribute this software, please contact Berkeley Lab's Intellectual Property Office at IPO@lbl.gov.
+#   If you have questions about your rights to use or distribute this software, please contact Berkeley Lab's Intellectual Property Office at IPO@lbl.gov.
 
-  NOTICE.  This Software was developed under funding from the U.S. Department of Energy and the U.S. Government consequently retains certain rights.  As such, the U.S. Government has been granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable, worldwide license in the Software to reproduce, distribute copies to the public, prepare derivative works, and perform publicly and display publicly, and to permit others to do so.
+#   NOTICE.  This Software was developed under funding from the U.S. Department of Energy and the U.S. Government consequently retains certain rights.  As such, the U.S. Government has been granted for itself and others acting on its behalf a paid-up, nonexclusive, irrevocable, worldwide license in the Software to reproduce, distribute copies to the public, prepare derivative works, and perform publicly and display publicly, and to permit others to do so.
 
-github_repo: "https://github.com/lbnlbxe/bxe"
+# github_repo: "https://github.com/lbnlbxe/bxe"
 
-markdown: kramdown
-highlighter: rouge
-permalink: pretty
+# markdown: kramdown
+# highlighter: rouge
+# permalink: pretty
 
 # Kramdown configuration
-kramdown:
-  toc_levels: 2..6  # Only include H2-H6 in table of contents
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: 'highlight'
-    span:
-      line_numbers: false
+# kramdown:
+#   toc_levels: 2..6  # Only include H2-H6 in table of contents
+#   syntax_highlighter: rouge
+#   syntax_highlighter_opts:
+#     css_class: 'highlight'
+#     span:
+#       line_numbers: false
 
-# GitHub Pages supported plugins (automatically enabled with github-pages gem)
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+# include: ['pages']
 
-include: ['pages']
-
-defaults:
-  - scope:
-      path: "pages"
-      type: "pages"
-    values:
-      layout: "default"
+# defaults:
+#   - scope:
+#       path: "pages"
+#       type: "pages"
+#     values:
+#       layout: "default"
 
 exclude:
   - Gemfile
