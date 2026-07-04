@@ -147,6 +147,3 @@ Temporary Items
 # Jekyll specific
 .jekyll-metadata
 _drafts/
-
-# GitHub Pages specific
-.github/workflows/pages.yml
