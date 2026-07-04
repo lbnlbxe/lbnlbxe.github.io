@@ -25,7 +25,7 @@ permalink: /
 
 *Build on the FireSim environment to perform extensive architecture simulation utilizing LBNL's FPGA cluster.*
 
-The work presented here is based on the hard work done by the <a href="https://fires.im/" target="_blank"><i class="fas fa-fire-flame-curved" style="color: #e25822;"></i> FireSim</a> and <a href="https://chipyard.readthedocs.io/en/main/" target="_blank">🏗️ Chipyard</a> development teams at <a href="https://bar.eecs.berkeley.edu/" target="_blank">🐻 UC Berkeley Architecture Research</a>. Many thanks for helping us bring this platform to life.
+The work presented here is based on the hard work done by the <a href="https://fires.im/" target="_blank">🔥 FireSim</a> and <a href="https://chipyard.readthedocs.io/en/main/" target="_blank">🏗️ Chipyard</a> development teams at <a href="https://bar.eecs.berkeley.edu/" target="_blank">🐻 UC Berkeley Architecture Research</a>. Many thanks for helping us bring this platform to life.
 
 The UCB-BAR team provides documentation and tutorials on using FireSim and Chipyard. Most of the documentation provided here is based on those documents. Below is list of useful links for getting started with understanding how FireSim and Chipyard operate:
 
