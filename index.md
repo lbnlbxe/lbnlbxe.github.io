@@ -12,9 +12,9 @@ permalink: /
   <p><em>LBNL-hosted, FPGA-based Computer Architecture Simulation Environment</em></p>
 </div>
 
-[Github]({{ site.github_repo }}){:target="_blank" .btn .btn-purple .mr-2}
-[Learn More]({{ '/about' | relative_url }}){: .btn .btn-blue .mr-2}
-[Documentation]({{ '/docs' | relative_url }}){: .btn .btn-green .mr-2}
+[<i class="fa-brands fa-github"></i> Github]({{ site.github_repo }}){:target="_blank" .btn .btn-purple .mr-2}
+[<i class="fa-solid fa-chalkboard"></i> Learn More]({{ '/about' | relative_url }}){: .btn .btn-blue .mr-2}
+[<i class="fa-brands fa-readme"></i> Documentation]({{ '/docs' | relative_url }}){: .btn .btn-green .mr-2}
 
 {: .new-title }
 > BXE v3.0.1 Released!
@@ -25,12 +25,12 @@ permalink: /
 
 *Build on the FireSim environment to perform extensive architecture simulation utilizing LBNL's FPGA cluster.*
 
-The work presented here is based on the hard work done by the <a href="https://fires.im/" target="_blank">🔥 FireSim</a> and <a href="https://chipyard.readthedocs.io/en/main/" target="_blank">🏗️ Chipyard</a> development teams at <a href="https://bar.eecs.berkeley.edu/" target="_blank">🐻 UC Berkeley Architecture Research</a>. Many thanks for helping us bring this platform to life.
+The work presented here is based on the hard work done by the <a href="https://fires.im/" target="_blank"><i class="fas fa-fire-flame-curved" style="color: #e25822;"></i> FireSim</a> and <a href="https://chipyard.readthedocs.io/en/main/" target="_blank">🏗️ Chipyard</a> development teams at <a href="https://bar.eecs.berkeley.edu/" target="_blank">🐻 UC Berkeley Architecture Research</a>. Many thanks for helping us bring this platform to life.
 
 The UCB-BAR team provides documentation and tutorials on using FireSim and Chipyard. Most of the documentation provided here is based on those documents. Below is list of useful links for getting started with understanding how FireSim and Chipyard operate:
 
 <div class="card-grid">
-  <a href="https://docs.fires.im/" class="site-card" target="_blank">🔥<div class="card-title">FireSim</div><p>Fast and Effortless FPGA-accelerated Hardware Simulation with On-Prem and Cloud Flexibility</p></a>
+  <a href="https://docs.fires.im/" class="site-card" target="_blank"><i class="fas fa-fire-flame-curved" style="color: #e25822;"></i><div class="card-title">FireSim</div><p>Fast and Effortless FPGA-accelerated Hardware Simulation with On-Prem and Cloud Flexibility</p></a>
 <a href="https://chipyard.readthedocs.io/en/main/" class="site-card" target="_blank">🏗️<div class="card-title">Chipyard</div><p>Framework for designing and evaluating full-system hardware using agile teams</p></a>
 <a href="https://firemarshal.readthedocs.io/en/latest/Tutorials/quickstart.html" class="site-card" target="_blank">🧑‍🚒<div class="card-title">FireMarshal</div><p>Workload generation tool for RISC-V based systems for FireSim FPGA-accelerated simulation</p></a>
 </div>

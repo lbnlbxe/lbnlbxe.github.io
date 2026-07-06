@@ -19,7 +19,7 @@ Welcome to the comprehensive documentation for Berkeley eXtensible Environment. 
 
 Here's a list of the official documentation for Chipyard, FireSim, and FireMarshal
 
-#### [🔥 FireSim](https://docs.fires.im/){:target="_blank"}
+#### [<i class="fas fa-fire-flame-curved" style="color: #e25822;"></i> FireSim](https://docs.fires.im/){:target="_blank"}
 
 - [FireSim Basics](https://docs.fires.im/en/main/FireSim-Basics.html){:target="_blank"}
 - [Local FPGA System Setup](https://docs.fires.im/en/main/Local-FPGA-Initial-Setup.html){:target="_blank"}

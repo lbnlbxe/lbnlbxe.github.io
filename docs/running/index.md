@@ -16,4 +16,3 @@ This section is entirely about running your hardware designs. These walkthrough 
 <div class="card-grid">
   <a href="{{ '/docs/running/default-sim' | relative_url }}" class="site-card">🔥<div class="card-title">Default Simulation</div><p>Walkthrough guide to building a custom design with Chipyard.</p></a>
 </div>
-
