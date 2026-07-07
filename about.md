@@ -16,7 +16,7 @@ permalink: /about/
 - OS: [Xubuntu 24.04.3](https://xubuntu.org/release/24-04/){:target="_blank"}
 - FPGA: AMD/Xilinx [Alveo U250](https://www.xilinx.com/products/boards-and-kits/alveo/u250.html){:target="_blank"}
   - AMD/Xilinx [Vitis 2023.1](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis/2023-1.html){:target="_blank"}
-- FireSim: [main](https://github.com/firesim/firesim/tree/c301eb5){:target="_blank"}
+- FireSim: [main](https://github.com/firesim/firesim/tree/main){:target="_blank"}
 
 ### BXE FireSim Cloud Architecture
 
