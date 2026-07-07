@@ -40,6 +40,6 @@ Here's a list of the official documentation for Chipyard, FireSim, and FireMarsh
 
 <div class="card-grid">
 <a href="{{ '/docs/environment' | relative_url }}" class="site-card">🚀<div class="card-title">Getting Started</div><p>New to the project? Start here to learn the basics and get up and running quickly.</p></a>
-<a href="{{ '{{ '/docs/building' | relative_url }}' | relative_url }}" class="site-card">🔨<div class="card-title">Building Guide</div><p>Guides for building BXE designs.</p></a>
+<a href="{{ '/docs/building' | relative_url }}' | relative_url }}" class="site-card">🔨<div class="card-title">Building Guide</div><p>Guides for building BXE designs.</p></a>
 <a href="{{ '/docs/running' | relative_url }}" class="site-card">🏃<div class="card-title">Running Guide</div><p>Guide to run designs within BXE.</p></a>
 </div>

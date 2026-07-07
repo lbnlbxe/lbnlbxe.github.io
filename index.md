@@ -6,7 +6,7 @@ permalink: /
 ---
 
 <div style="display: flex; align-items: center;">
-  <img src="{{ 'assets/logos/project-logo.png' | relative_url }}" alt="BXE Logo" style="height: 100px">&nbsp;&nbsp;<h2>Berkeley eXtensible Environment (BXE)</h2>
+  <img src="{{ 'assets/logos/project-logo.png' | relative_url }}" alt="BXE Logo" style="max-height: 100px">&nbsp;&nbsp;<h2>Berkeley eXtensible Environment (BXE)</h2>
 </div>
 <div style="display: flex; align-items: center;">
   <p><em>LBNL-hosted, FPGA-based Computer Architecture Simulation Environment</em></p>
