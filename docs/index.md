@@ -11,7 +11,7 @@ has_children: true
 Welcome to the comprehensive documentation for Berkeley eXtensible Environment. This documentation is designed to help you understand, configure, and extend our project.
 
 {: .new-title }
-> BXE v3.0.1 Released!
+> [![Latest BXE release](https://img.shields.io/github/v/release/lbnlbxe/bxe?logo=github&label=BXE)](https://github.com/lbnlbxe/bxe/releases/latest){:target="_blank"} Released!
 >
 > Check out the [What's New]({{ '/docs/whats-new' | relative_url }}) page to learn about new features of BXE.
 

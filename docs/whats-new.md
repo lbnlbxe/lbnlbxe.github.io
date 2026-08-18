@@ -10,14 +10,31 @@ nav_order: 1
 
 {:toc}
 
+### [v3.0.3](https://github.com/lbnlbxe/bxe/releases/tag/v3.0.3){:target="_blank"} - 2026 April 23
+
+- Add manager/runner mode and harden fstab setup in setupBXE.sh
+
+_Full Changelog_: [v3.0.2...v3.0.3](https://github.com/lbnlbxe/bxe/compare/v3.0.2...v3.0.3){:target="_blank"}
+
+### [v3.0.2](https://github.com/lbnlbxe/bxe/releases/tag/v3.0.2){:target="_blank"} - 2026 April 02
+
+- Fixed FireMarshal to use `guestmount`
+- Added `managers/add-bxe-user.sh` script to manage BXE Manager users and their groups
+
+_Full Changelog_: [v3.0.1...v3.0.2](https://github.com/lbnlbxe/bxe/compare/v3.0.1...v3.0.2){:target="_blank"}
+
 ### [v3.0.1](https://github.com/lbnlbxe/bxe/releases/tag/v3.0.1){:target="_blank"} - 2026 February 19
 
 - Updates to setupBXE.sh to account for AMD/Xilinx Tools prerequisites.
+
+_Full Changelog_: [v3.0.0...v3.0.1](https://github.com/lbnlbxe/bxe/compare/v3.0.0...v3.0.1){:target="_blank"}
 
 ### [v3.0.0](https://github.com/lbnlbxe/bxe/releases/tag/v3.0.0){:target="_blank"} - 2026 January 28
 
 - **Public Release**: Public release of [BXE source code](https://github.com/lbnlbxe/bxe){:target="_blank"}
 - Minor Bugfixes
+
+_Full Changelog_: [v2.3.0...v3.0.0](https://github.com/lbnlbxe/bxe/compare/v2.3.0...v3.0.0){:target="_blank"}
 
 ### v2.3.0 - 2025 November 15
 

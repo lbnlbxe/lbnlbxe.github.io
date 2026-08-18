@@ -17,7 +17,7 @@ permalink: /
 [<i class="fa-brands fa-readme"></i> Documentation]({{ '/docs' | relative_url }}){: .btn .btn-green .mr-2}
 
 {: .new-title }
-> BXE v3.0.1 Released!
+> [![Latest BXE release](https://img.shields.io/github/v/release/lbnlbxe/bxe?logo=github&label=BXE)](https://github.com/lbnlbxe/bxe/releases/latest){:target="_blank"} Released!
 >
 > Check out the [What's New]({{ '/docs/whats-new' | relative_url }}) page to learn about new features of BXE.
 
