@@ -10,6 +10,12 @@ nav_order: 1
 
 {:toc}
 
+### [v3.0.4](https://github.com/lbnlbxe/bxe/releases/tag/v3.0.4){:target="_blank"} - 2026 August 18
+
+- Fixed bug in runner driver deploy scripts
+
+_Full Changelog_: [v3.0.3...v3.0.4](https://github.com/lbnlbxe/bxe/compare/v3.0.2...v3.0.3){:target="_blank"}
+
 ### [v3.0.3](https://github.com/lbnlbxe/bxe/releases/tag/v3.0.3){:target="_blank"} - 2026 April 23
 
 - Add manager/runner mode and harden fstab setup in setupBXE.sh
