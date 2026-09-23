@@ -15,7 +15,7 @@ permalink: /publications/
 >
 > *2026 IEEE Symposium on Low-Power and High-Speed Chips and Systems (COOL CHIPS)*, pp. 1–6, 2026.
 >
-> [View Paper](https://doi.org/10.1109/COOLCHIPS68842.2026.11556996){: .btn .btn-green }
+> [View Paper](https://doi.org/10.1109/COOLCHIPS68842.2026.11556996){: .btn .btn-green target="_blank"}
 {: .highlight }
 
 ## 2025
@@ -26,5 +26,5 @@ permalink: /publications/
 >
 > *Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis*, pp. 1712–1722, 2025.
 >
-> [View Paper](https://doi.org/10.1145/3731599.3767534){: .btn .btn-green }
+> [View Paper](https://doi.org/10.1145/3731599.3767534){: .btn .btn-green target="_blank"}
 {: .highlight }
