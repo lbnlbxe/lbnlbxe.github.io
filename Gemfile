@@ -6,4 +6,5 @@ gem "just-the-docs"
 
 group :jekyll_plugins do
   gem 'jekyll-email-protect'
+  gem "jekyll-sitemap"
 end

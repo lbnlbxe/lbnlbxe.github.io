@@ -43,6 +43,7 @@ callouts:
 # GitHub Pages supported plugins (automatically enabled with github-pages gem)
 plugins:
   - jekyll-email-protect
+  - jekyll-sitemap
 
 mermaid:
   # Version of mermaid library
