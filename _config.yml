@@ -9,7 +9,7 @@ github_repo: "https://github.com/lbnlbxe/bxe"
 # color_scheme: lbnl-dark
 color_scheme: lbnl-light
 
-logo: "assets/logos/project-logo.png"
+logo: "/assets/logos/project-logo.png"
 favicon_ico: "/assets/favicon/favicon.ico"
 
 search_enabled: false
