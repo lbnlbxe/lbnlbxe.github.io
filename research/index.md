@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research
-nav_order: 5
+nav_order: 6
 permalink: /research/
 has_children: true
 nav_exclude: true

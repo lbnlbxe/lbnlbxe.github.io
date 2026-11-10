@@ -2,7 +2,7 @@
 layout: page
 title: Default FireSim Simulation
 parent: Running
-order: 1
+nav_order: 1
 permalink: /docs/running/default-sim/
 ---
 

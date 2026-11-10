@@ -2,7 +2,7 @@
 layout: page
 title: Software Walkthrough
 parent: Building
-order: 2
+nav_order: 2
 permalink: /docs/building/software-walkthrough/
 ---
 

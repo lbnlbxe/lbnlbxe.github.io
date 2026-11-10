@@ -2,7 +2,7 @@
 layout: page
 title: Hardware Walkthrough
 parent: Building
-order: 1
+nav_order: 1
 permalink: /docs/building/hardware-walkthrough/
 ---
 
